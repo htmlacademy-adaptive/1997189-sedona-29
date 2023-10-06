@@ -103,7 +103,7 @@ const svg = () => {
   .pipe(gulp.dest('build/img'));
 };
 
-//шрифты, манифест
+//шрифты, манифест асинхронный, сделали синхронным
 export const copy = (done) => {
   gulp.src([
   "source/fonts/**/*.{woff2,woff}",

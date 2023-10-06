@@ -11,5 +11,13 @@
 @use "./common/header.scss";
 @use "./common/footer.scss";
 @use "./common/socials.scss";
+@use "./common/caption.scss";
+@use "./common/text.scss";
 @use "./common/footer-logo.scss";
+@use "./common/button.scss";
 @use "./blocks/index/welcome.scss";
+@use "./blocks/index/advantages.scss";
+@use "./blocks/index/advantages-list.scss";
+@use "./blocks/index/sub-list.scss";
+@use "./blocks/index/search.scss";
+@use "./blocks/index/map.scss";

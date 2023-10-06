@@ -1,0 +1,97 @@
+@use "../../common/variables.scss";
+
+.sub-list {
+  margin: 0;
+  //padding: 32px 10px 0 65px;
+  list-style-type: none;
+  background-color: #ffffff;
+  padding: 32px 0 12px;
+}
+
+.sub-list__item {
+  position: relative;
+  padding: 0 18px 35px 65px;
+
+  &--icon1::before {
+    content: "";
+    background-image: url("../img/icons/sprite.svg#icon-house");
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: -9px;
+    left: 19px;
+  }
+
+  &--icon2::before {
+    content: "";
+    background-image: url("../img/icons/sprite.svg#icon-burger");
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+    top: -9px;
+    left: 19px;
+  }
+
+  &--icon3::before {
+    content: "";
+    background-image: url("../img/icons/sprite.svg#icon-gift");
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+    top: -9px;
+    left: 19px;
+  }
+}
+
+.sub-list__item-caption {
+  margin: 0 0 14px 0;
+  padding: 0;
+  color: #000000;
+}
+
+.sub-list__item-text {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+@media (min-width: variables.$tablet-width) {
+  .sub-list__item {
+    display: flex;
+    flex-direction: column;
+    padding: 126px 43px 50px;
+
+
+    &--icon1::before,
+    &--icon2::before {
+      width: 80px;
+      height: 80px;
+      background-size: 77px 76px;
+      top: 28px;
+      left: calc(50% - 40px);
+    }
+
+    &--icon3::before {
+      width: 80px;
+      height: 80px;
+      background-size: 77px 76px;
+      top: 30px;
+      left: calc(50% - 36px);
+    }
+  }
+
+  .sub-list__item-caption {
+    text-align: center;
+    margin-bottom: 22px;
+  }
+
+  .sub-list__item-text {
+    text-align: center;
+  }
+}

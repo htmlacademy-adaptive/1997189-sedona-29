@@ -1,3 +1,4 @@
+@use "../common/variables.scss";
 .nav-list {
   margin: 0;
   padding: 0;
@@ -61,20 +62,18 @@
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
   }
 
-  &--current {
-    color: #766357;
-  }
+  @media (max-width: variables.$mobile-width-only) {
+    &:hover,
+    &:focus {
+      background-color: #669ec0;
+    }
 
-  &:hover,
-  &:focus {
-    color: #81b3d2;
-  }
-
-  &:active {
-    opacity: 0.3;
+    &:active {
+      background-color: #5496bd;
+      color: rgba(255, 255, 255, 0.3);
+    }
   }
 }
-
 
 .nav-list__item-link {
   color: inherit;
@@ -100,6 +99,20 @@
 
   .nav-list__item {
     box-shadow: none;
+
+
+    &--current {
+      color: #766357;
+    }
+
+    &:hover,
+    &:focus {
+      color: #81b3d2;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
 
     &:last-child {
       background: none;

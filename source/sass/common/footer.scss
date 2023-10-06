@@ -1,6 +1,9 @@
+@use "../common/variables.scss";
+
 .footer {
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 29px 20px 0;
+  column-gap: 113px;
 }
 
 .footer__link {
@@ -12,8 +15,34 @@
   line-height: 26px;
   text-transform: uppercase;
   color: #000000;
+  max-width: 150px;
+
+  &:hover,
+  &:focus {
+    color: variables.$basic-blue;
+  }
+
+  &:active {
+    color: #b3b3b3;
+  }
 }
 
 .footer__socials-list {
   margin: 0 auto 30px;
+}
+
+@media (min-width: variables.$tablet-width) {
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 113px;
+  }
+}
+
+@media (min-width: variables.$desktop-width) {
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 269px;
+  }
 }

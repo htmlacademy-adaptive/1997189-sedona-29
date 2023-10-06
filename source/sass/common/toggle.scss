@@ -20,6 +20,15 @@
     left: 0;
     box-shadow: 0 9px 0 0 #81b3d2, 0 18px 0 0 #81b3d2;
   }
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: 768px) {

@@ -1,72 +1,224 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-    <meta name="description" content="Сайт туристического города Седона.">
-    <meta name="viewport" content="width=device-width, initial-scale=1
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+  <meta name="description" content="Сайт туристического города Седона.">
+  <meta name="viewport" content="width=device-width, initial-scale=1
     ">
-    <link rel="stylesheet" href="css/style.min.css">
-  </head>
-  <body class="page__body body">
-    <div class="body__container">
-<header class="body__header header ">
-  <nav class="header__nav nav">
-    <ul class="nav__list nav-list">
-      <li class="nav-list__item nav-list__item--current">
-        <a class="nav-list__item-link" href="">Главная</a>
-      </li>
-      <li class="nav-list__item">
-        <a class="nav-list__item-link" href="">Фото и видео</a>
-      </li>
-      <li class="nav-list__item">
-        <a class="nav-list__item-link" href="">Форма Отзыва</a>
-      </li>
-      <li class="nav-list__item">
-        <a class="nav-list__item-link" href="">HTML ACADEMY</a>
-      </li>
-    </ul>
-    <button class="nav__button toggle" type="button">
-      <span class="visually-hidden">Кнопка закрытия, открытия меню.</span>
-    </button>
-    <a class=" header__logo logo" href="">
-      <picture>
-      <img class="logo__img logo-img" src="img/logo-sedona.svg" width="185" height="96" alt="Логотип города Седона.">
-    </picture>
-  </a>
-  </nav>
-</header>
-<main class="body__main main">
-  <section class="main__welcome welcome">
-    <h1 class="visually-hidden">Сайт туристического города Седона.</h1>
-    <img class="welcome__image welcome-image" src="img/text-index.svg" width="282" height="214" alt="Добро пожаловать в Седону.">
-  </section>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
 
-</main>
-<footer class="body__footer footer">
-<a class="footer__link" href="#">#visitSEDONA</a>
-<ul class="footer__socials-list socials">
-  <li class="socials__item">
-    <a class="socials__link socials__link--vk" href=""></a>
-  </li>
-  <li class="socials__item">
-    <a class="socials__link socials__link--twitter" href=""></a>
-  </li>
-  <li class="socials__item">
-    <a class="socials__link socials__link--youtube" href=""></a>
-  </li>
-</ul>
-<div class="footer__logo footer-logo">
-  <span class="footer-logo__text">Разработано</span>
-  <svg width="29" height="35" viewBox="0 0 29 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M14.65 0.449951H14.55L1.05 1.84995V26.55L14.55 34.5499L27.95 26.55V1.84995L14.65 0.449951ZM26.05 12.55L14.55 5.74995V5.64995H14.45L14.35 5.54995V5.64995L2.95 12.55V3.54995L14.45 2.34995L26.05 3.54995V12.55ZM14.45 7.24995L25.95 13.95L21.45 16.55L14.35 12.35V13.75L20.25 17.25L19.35 17.75L14.35 14.75V16.15L18.15 18.45L17.35 18.95L14.35 17.15V18.55L16.25 19.65L14.45 20.75L3.05 14.05L14.45 7.24995ZM2.95 15.55L14.35 22.35V23.35L6.45 18.65V20.05L14.45 24.85V25.95L6.45 21.25V22.65L14.45 27.45L22.55 22.55V17.35L25.95 15.35V25.35L14.45 32.25L2.95 25.45V15.55Z" fill="black"/>
-    </svg>
+<body class="page__body body">
+  <div class="body__container">
+    <header class="body__header header ">
+      <nav class="header__nav nav">
+        <ul class="nav__list nav-list">
+          <li class="nav-list__item nav-list__item--current">
+            <a class="nav-list__item-link" href="">Главная</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__item-link" href="">Фото и видео</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__item-link" href="">Форма Отзыва</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__item-link" href="">HTML ACADEMY</a>
+          </li>
+        </ul>
+        <button class="nav__button toggle" type="button">
+          <span class="visually-hidden">Кнопка закрытия, открытия меню.</span>
+        </button>
+        <a class=" header__logo logo" href="">
+          <picture>
+            <img class="logo__img logo-img" src="img/logo-sedona.svg" width="185" height="96"
+              alt="Логотип города Седона.">
+          </picture>
+        </a>
+      </nav>
+    </header>
+    <main class="body__main main">
+      <section class="main__welcome welcome">
+        <h1 class="visually-hidden">Сайт туристического города Седона.</h1>
+        <img class="welcome__image welcome-image" src="img/text-index.svg" width="282" height="214"
+          alt="Добро пожаловать в Седону.">
+      </section>
 
-</div>
-</footer>
-    </div>
+      <section class="main__advantages advantages">
+        <h2 class="advantages__caption caption">СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего!</h2>
+        <p class="advantages__text text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        <ol class="advantages__list advantages-list">
+          <li class="advantages-list__item advantages-list__item--box">
+            <div class="advantages-list__text-wrapper">
+              <h3 class="advantages-list__caption caption">
+                <span class="advantages-list__row">НАСТОЯЩИЙ ГОРОДОК</span>
+              </h3>
+              <p class="advantages-list__text text">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+            </div>
+            <div class="advantages-list__img-wrapper">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)"
+                  srcset="img/photo-city-desktop@1x.webp 1x, img/photo-city-desktop@2x.webp 2x" width="800"
+                  height="256">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/photo-city-tablet@1x.webp 1x, img/photo-city-tablet@2x.webp 2x" width="512" height="256">
+                <source type="image/webp" srcset="img/photo-city@1x.webp 1x, img/photo-city@2x.webp 2x" width="520"
+                  height="260">
 
+                <source media="(min-width: 1200px)"
+                  srcset="img/photo-city-desktop@1x.jpg 1x, img/photo-city-desktop@2x.webp 2x" type="image/png"
+                  width="800" height="256">
+                <source media="(min-width: 768px)"
+                  srcset="img/photo-city-tablet@1x.jpg 1x, img/photo-city-tablet@2x.jpg 2x" type="image/png" width="512"
+                  height="256">
+                <img class="advantages-list__img" src="img/photo-city@1x.jpg" srcset="img/photo-city@2x.jpg 2x"
+                  width="520" height="260" alt="Виды города Седона.">
+              </picture>
+            </div>
+            <ul class="advantages__sub-list sub-list">
+              <li class="sub-list__item sub-list__item--icon1">
+                <h3 class="sub-list__item-caption caption">Жилье</h3>
+                <p class="sub-list__item-text text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+              </li>
+              <li class="sub-list__item sub-list__item--icon2">
+                <h3 class="sub-list__item-caption caption">Еда</h3>
+                <p class="sub-list__item-text text">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
+              </li>
+              <li class="sub-list__item sub-list__item--icon3">
+                <h3 class="sub-list__item-caption caption">Сувениры</h3>
+                <p class="sub-list__item-text text">Не только китайского, но и местного производства!</p>
+              </li>
+            </ul>
+          </li>
+          <li class="advantages-list__item advantages-list__item--container">
+            <div class="advantages-list__text-wrapper">
+              <h3 class="advantages-list__caption caption">
+                <span class="advantages-list__row">ТАМ ЕСТЬ Мост дьявола</span>
+              </h3>
+              <p class="advantages-list__text text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+            </div>
+            <div class="advantages-list__img-wrapper">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)"
+                  srcset="img/photo-bridge-desktop@1x.webp 1x, img/photo-bridge-desktop@2x.jpg 2x" width="800"
+                  height="256">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/photo-bridge-tablet@1x.webp 1x, img/photo-bridge-tablet@2x.webp 2x" width="512" height="256">
+                <source type="image/webp" srcset="img/photo-bridge@1x.webp 1x, img/photo-bridge@2x.webp 2x" width="520"
+                  height="260">
 
-    <script src="./js/script.js"></script>
-  </body>
+                <source media="(min-width: 1200px)"
+                  srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.webp 2x" type="image/png"
+                  width="800" height="256">
+                <source media="(min-width: 768px)"
+                  srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x" type="image/png"
+                  width="512" height="256">
+                <img class="advantages-list__img" src="img/photo-bridge@1x.jpg" srcset="img/photo-bridge@2x.jpg 2x"
+                  width="520" height="260" alt="Виды города Седона.">
+              </picture>
+            </div>
+          </li>
+          <li class="advantages-list__item">
+            <div class="advantages-list__text-wrapper">
+            <h3 class="advantages-list__caption caption">
+              <span class="advantages-list__row">НЕБОЛЬШАЯ ПЛОЩАДЬ</span>
+              </h3>
+            <p class="advantages-list__text text">ВСЕ интересные места находятся очень близко</p>
+          </div>
+          </li>
+          <li class="advantages-list__item">
+            <div class="advantages-list__text-wrapper">
+            <h3 class="advantages-list__caption caption">
+
+              <span class="advantages-list__row">КРАСИВАЯ ДОРОГА
+              </span>
+              </h3>
+            <p class="advantages-list__text text">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
+            </div>
+
+          </li>
+          <li class="advantages-list__item">
+            <div class="advantages-list__text-wrapper">
+            <h3 class="advantages-list__caption caption">
+              <span class="advantages-list__row">МАЛО ТУРИСТОВ
+              </span>
+              </h3>
+            <p class="advantages-list__text text">Большинство едет в гранд каньон и толпится там</p>
+            </div>
+          </li>
+        </ol>
+      </section>
+      <section class="main__search search">
+        <h2 class="search__caption caption">Заинтересовались?</h2>
+        <p class="search__text text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <a class="search__button button" href="">Найти гостиницу</a>
+      </section>
+
+      <section class="main__map map">
+        <h2 class="visually-hidden">Карта города Садона.</h2>
+        <div class="map__wrapper">
+        <iframe class="map__box" title="Адрес места на карте: 780 Чапел-роуд, Седона 86336, Соединенные Штаты Америки." width="320"
+        height="362" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7785.519542692347!2d-111.76168526528303!3d34.871106276239665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da3e00344e615%3A0x536aad30cbc2054b!2sSedona%20Heritage%20Museum!5e0!3m2!1sru!2sru!4v1696311444062!5m2!1sru!2sru" style="border: 0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <noscript>
+            <div class="map__nojs-wrapper">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)"
+                  srcset="img/map-desktop.webp 1x, img/map-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/map-tablet.webp 1x, img/map-tablet@2x.webp 2x">
+
+                <source type="image/webp" srcset="img/map-mobile.webp 1x, img/map-mobile@2x.webp 2x">
+
+                <source media="(min-width: 1200px)" srcset="img/map-desktop.jpg 1x, img/map-desktop@2x.jpg 2x"
+                  type="image/png" width="1200" height="350">
+
+                <source media="(min-width: 768px)" srcset="img/map-tablet.jpg 1x, img/map-tablet@2x.jpg 2x"
+                  type="image/png" width="768" height="350">
+
+                <img class="map__image" src="img/map-mobile.jpg" srcset="img/map-mobile@2x.jpg 2x" width="320"
+                  height="350" alt="Адрес места на карте: 780 Чапел-роуд, Седона 86336, Соединенные Штаты Америки.">
+              </picture>
+            </div>
+
+          </noscript>
+        </div>
+      </section>
+
+    </main>
+    <footer class="body__footer footer">
+      <a class="footer__link" href="#">#visitSEDONA</a>
+      <ul class="footer__socials-list socials">
+        <li class="socials__item">
+          <a class="socials__link socials__link--vk" href="">
+            <span class="visually-hidden">В контакте.</span>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link socials__link--twitter" href="">
+            <span class="visually-hidden">твиттер.</span>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link socials__link--youtube" href="">
+            <span class="visually-hidden">youtube.</span>
+          </a>
+        </li>
+      </ul>
+      <div class="footer__logo footer-logo">
+        <a class="footer-logo__link" href="#">
+        <span class="footer-logo__text">Разработано</span>
+        <svg class="footer-logo__icon" width="29" height="35" viewBox="0 0 29 35" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M14.65 0.449951H14.55L1.05 1.84995V26.55L14.55 34.5499L27.95 26.55V1.84995L14.65 0.449951ZM26.05 12.55L14.55 5.74995V5.64995H14.45L14.35 5.54995V5.64995L2.95 12.55V3.54995L14.45 2.34995L26.05 3.54995V12.55ZM14.45 7.24995L25.95 13.95L21.45 16.55L14.35 12.35V13.75L20.25 17.25L19.35 17.75L14.35 14.75V16.15L18.15 18.45L17.35 18.95L14.35 17.15V18.55L16.25 19.65L14.45 20.75L3.05 14.05L14.45 7.24995ZM2.95 15.55L14.35 22.35V23.35L6.45 18.65V20.05L14.45 24.85V25.95L6.45 21.25V22.65L14.45 27.45L22.55 22.55V17.35L25.95 15.35V25.35L14.45 32.25L2.95 25.45V15.55Z"
+            fill="currentColor" />
+        </svg>
+      </a>
+      </div>
+    </footer>
+  </div>
+  <script src="./js/script.js"></script>
+</body>
+
 </html>
