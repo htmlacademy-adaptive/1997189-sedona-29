@@ -1,0 +1,14 @@
+@use "./common/variables.scss";
+
+.form-list {
+  list-style-type: none;
+  padding: 0 20px;
+  margin: 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+@media (min-width: variables.$tablet-width) {
+  .form-list {
+    border-bottom: none;
+  }
+}

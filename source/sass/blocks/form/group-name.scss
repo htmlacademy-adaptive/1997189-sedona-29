@@ -1,0 +1,24 @@
+
+@use "./common/variables.scss";
+
+.group-name__item {
+  margin-bottom: 16px;
+}
+
+.group-name__list {
+  padding-bottom: 24px;
+}
+
+@media (min-width: variables.$tablet-width) {
+  .group-name {
+    border-right: 1px solid #dbdbdb;
+  }
+
+  .group-name__caption {
+    margin-bottom: 28px;
+  }
+
+  .group-name__list {
+    padding: 0 28.5px 0 0;
+  }
+}

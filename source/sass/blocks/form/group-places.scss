@@ -1,0 +1,23 @@
+@use "./common/variables.scss";
+
+.group-places__item {
+  margin-bottom: 17px;
+}
+
+.group-places__list {
+  padding-bottom: 5px;
+}
+
+@media (min-width: variables.$tablet-width) {
+  .group-places__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: variables.$desktop-width) {
+  .group-places__list {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+

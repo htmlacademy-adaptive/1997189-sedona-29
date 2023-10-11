@@ -1,0 +1,60 @@
+@use "./common/variables.scss";
+
+.feedback-text {
+  text-align: center;
+  padding: 0 20px;
+  display: block;
+}
+
+.feedback-text__caption {
+  padding-top: 24px;
+  margin-bottom: 20px;
+}
+
+.feedback-text__text {
+  width: 100%;
+  resize: none;
+  min-height: 150px;
+  background-color: #f2f2f2;
+  padding: 16px;
+  border: none;
+  margin-bottom: 52px;
+  color: #000000;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  cursor: pointer;
+
+  &:placeholder-shown {
+    color: rgba(0, 0, 0, 0.3);
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+    background-color: #f2f2f2;
+    border: none;
+    outline: none;
+  }
+
+  &:focus,
+  &:focus-visible {
+    border: none;
+    outline: 4px solid #e5e5e5;
+    background-color: #ffffff;
+  }
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+}
+
+@media (min-width: variables.$tablet-width) {
+  .feedback-text__caption {
+    padding-top: unset;
+  }
+
+  .feedback-text {
+    padding: unset;
+  }
+}

@@ -125,11 +125,15 @@
   }
 
   .advantages-list__img {
-    height: 100%;
+    //height: 100%;
+    min-height: 100%;
+    overflow: hidden;
   }
 
   .advantages-list__img-wrapper {
-    height: 100%;
+    //height: 100%;
+    min-height: 100%;
+    overflow: hidden;
   }
 
   .advantages-list__item {
