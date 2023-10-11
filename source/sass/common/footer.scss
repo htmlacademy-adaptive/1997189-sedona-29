@@ -2,12 +2,12 @@
 
 .footer {
   margin: 0 auto;
-  padding: 29px 20px 0;
+  padding: 59px 20px 33px;
   column-gap: 113px;
 }
 
 .footer__link {
-  margin: 0 auto 30px;
+  margin: 0 auto 28px;
   display: block;
   text-align: center;
   font-size: 21px;
@@ -16,6 +16,7 @@
   text-transform: uppercase;
   color: #000000;
   max-width: 150px;
+  padding: 1px;
 
   &:hover,
   &:focus {

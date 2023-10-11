@@ -1,0 +1,22 @@
+@use "./common/variables.scss";
+
+.group-feedback__item {
+  margin-bottom: 6px;
+}
+
+.group-feedback__list {
+  padding-bottom: 8px;
+}
+
+@media (min-width: variables.$tablet-width) {
+  .group-feedback__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: variables.$desktop-width) {
+  .group-feedback__list {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

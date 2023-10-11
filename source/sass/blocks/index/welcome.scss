@@ -1,3 +1,5 @@
+@use "./common/variables.scss";
+
 .welcome {
   min-height: 389px;
   background-image: url("../img/back-mobile.jpg");
@@ -6,7 +8,14 @@
   padding-top: 90px;
   position: relative;
   z-index: -1;
-  //background: linear-gradient(#ffffff 38%, #81b3d2 38%);
+  background-color: #bdb0af;
+  background-position: center;
+
+  &--form {
+    padding-top: 52px;
+    min-height: 157px;
+  }
+
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/back-mobile@2x.jpg");
@@ -20,6 +29,8 @@
     height: 57px;
     position: absolute;
     bottom: -1px;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }
 
@@ -28,7 +39,7 @@
   margin: 0 auto;
 }
 
-@media (min-width: 768px) {
+@media (min-width: variables.$tablet-width) {
   .welcome {
     padding-top: 76px;
     min-height: 517px;
@@ -37,17 +48,39 @@
     @media (min-resolution: 2dppx) {
       background-image: url("../img/back-desktop@2x.jpg");
     }
+
+    &--form {
+      min-height: 288px;
+    }
+
+    &::after {
+      //background-size: 100% 57px;
+      width: 100%;
+      background: url("../img/icons/sprite.svg#welcome-triangle") center /100% 57px, linear-gradient(to right, #ffffff 0, #ffffff 1px, transparent 1px, transparent 1199px, #ffffff 1199px, #ffffff 100%);
+    }
   }
 
   .welcome__image {
     width: 461px;
     height: 350px;
+
+    &--form {
+      height: 114px;
+    }
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: variables.$desktop-width) {
   .welcome {
     padding-top: 78px;
     z-index: 1;
+
+    /*&::after {
+      //background-size: 100% 57px;
+      width: 100%;
+      background: url("../img/icons/sprite.svg#welcome-triangle") center /100% 57px, linear-gradient(to right, #ffffff 0, #ffffff 1px, transparent 1px, transparent 1199px, #ffffff 1199px, #ffffff 100%);
+    }*/
   }
 }
+/*, linear-gradient(to right, #ffffff 0%, #ffffff 1%, transparent 1%, transparent 99%, #ffffff 99%, #ffffff 100%)*/
+/*background: url(../img/icons/sprite.svg#welcome-triangle) center /100% 57px;*/

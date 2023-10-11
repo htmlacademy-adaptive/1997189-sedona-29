@@ -1,0 +1,92 @@
+.text-input__input {
+  background-color: #f2f2f2;
+  border: none;
+  padding: 16px;
+  color: #000000;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  width: 100%;
+  cursor: pointer;
+
+  &:placeholder-shown {
+    color: rgba(0, 0, 0, 0.3);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+    background-color: #f2f2f2;
+  }
+
+  &:focus,
+  &:focus-visible {
+    border: none;
+    outline: 4px solid #e5e5e5;
+    background-color: #ffffff;
+  }
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &--phone {
+    padding-right: 58px;
+  }
+
+  &--email {
+    padding-right: 58px;
+  }
+}
+
+.text-input__label {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.text-input__row {
+  padding-left: 15px;
+}
+
+.text-input__wrapper {
+  width: 100%;
+  display: block;
+
+
+  &--phone {
+    position: relative;
+
+    &::after {
+      content: "";
+      width: 58px;
+      height: 58px;
+      background-color: #e6e6e6;
+      background-image: url("../img/icons/sprite.svg#phone");
+      background-repeat: no-repeat;
+      background-size: 18px;
+      position: absolute;
+      background-position: center;
+      top: 0;
+      right: 0;
+    }
+  }
+
+  &--email {
+    position: relative;
+
+    &::after {
+      content: "";
+      width: 58px;
+      height: 58px;
+      background-color: #e6e6e6;
+      background-image: url("../img/icons/sprite.svg#email");
+      background-repeat: no-repeat;
+      background-size: 18px;
+      position: absolute;
+      background-position: center;
+      top: 0;
+      right: 0;
+    }
+  }
+}

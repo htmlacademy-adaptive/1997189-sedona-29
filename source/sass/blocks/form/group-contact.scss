@@ -1,0 +1,19 @@
+@use "./common/variables.scss";
+
+.group-contact__item {
+  margin-bottom: 17px;
+}
+
+.group-contact__list {
+  padding-bottom: 17px;
+}
+
+@media (min-width: variables.$tablet-width) {
+  .group-contact__list {
+    padding: 0 0 0 28.5px;
+  }
+
+  .group-contact__caption {
+    margin-bottom: 28px;
+  }
+}
