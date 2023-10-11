@@ -1,0 +1,45 @@
+@use "../../common/variables.scss";
+
+.advantages {
+  padding-top: 34px;
+}
+
+.advantages__caption {
+  margin: 0 auto 36px;
+  width: 265px;
+  text-align: center;
+}
+
+.advantages__text {
+  width: 265px;
+  margin: 0 auto;
+  padding-bottom: 16px;
+  //padding: 0 20px 16px;
+}
+
+.advantages__sub-list {
+  margin-bottom: 12px;
+}
+
+@media (min-width: variables.$tablet-width) {
+  .advantages {
+    padding-top: 50px;
+  }
+
+  .advantages__text {
+    width: 495px;
+    margin-bottom: 39px;
+  }
+
+  .advantages__sub-list {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: unset;
+  }
+
+  .advantages__caption {
+    width: 450px;
+    margin-bottom: 29px;
+  }
+}

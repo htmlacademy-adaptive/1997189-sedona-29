@@ -1,0 +1,40 @@
+/*.nav--closed .toggle {
+  display: block;
+}
+
+.nav--opened .toggle {
+  width: 24px;
+  right: 17px;
+  top: -40px;
+  display: block;
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: #000000;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    box-shadow: none;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}*/
+
+.nav {
+  position: relative;
+}
+
+.nav__button {
+  right: 20px;
+  top: 18px;
+}

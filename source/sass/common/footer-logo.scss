@@ -1,0 +1,36 @@
+@use "../common/variables.scss";
+
+.footer-logo {
+  width: 129px;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 12px;
+  margin: 0 auto;
+}
+
+.footer-logo__text {
+  display: inline-block;
+  text-transform: uppercase;
+  padding-top: 6px;
+  width: 90px;
+}
+
+.footer-logo__icon {
+  width: 27px;
+}
+
+.footer-logo__link {
+  color: #000000;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 12px;
+
+  &:hover,
+  &:focus {
+    color: variables.$basic-blue;
+  }
+
+  &:active {
+    color: #b3b3b3;
+  }
+}

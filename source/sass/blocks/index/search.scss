@@ -1,0 +1,31 @@
+@use "../../common/variables.scss";
+
+.search {
+  padding: 39px 18px 39px 18px;
+}
+
+.search__caption {
+  font-size: 21px;
+  text-align: center;
+  margin-bottom: 19px;
+}
+
+.search__text {
+  margin-bottom: 33px;
+}
+
+.search__button {
+  max-width: 458px;
+  margin: 0 auto 10px;
+}
+
+@media (min-width: variables.$tablet-width) {
+  .search {
+    padding: 60px 30px;
+  }
+
+  .search__caption {
+    font-size: 30px;
+    line-height: 26px;
+  }
+}

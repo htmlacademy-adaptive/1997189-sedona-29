@@ -1,0 +1,17 @@
+.header {
+  min-height: 56px;
+  background-color: #ffffff;
+}
+
+.header__logo {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 93px);
+  z-index: 2;
+}
+
+@media (min-width: 768px) {
+  .header__logo {
+    z-index: 3;
+  }
+}

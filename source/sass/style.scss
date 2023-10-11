@@ -1,1 +1,23 @@
-// Начните писать стили здесь
+@use "./common/global.scss";
+@use "./common/page.scss";
+@use "./common/fonts.scss";
+@use "./common/body.scss";
+@use "./common/variables.scss";
+@use "./common/visually-hidden.scss";
+@use "./common/toggle.scss";
+@use "./common/nav-list.scss";
+@use "./common/nav.scss";
+@use "./common/logo.scss";
+@use "./common/header.scss";
+@use "./common/footer.scss";
+@use "./common/socials.scss";
+@use "./common/caption.scss";
+@use "./common/text.scss";
+@use "./common/footer-logo.scss";
+@use "./common/button.scss";
+@use "./blocks/index/welcome.scss";
+@use "./blocks/index/advantages.scss";
+@use "./blocks/index/advantages-list.scss";
+@use "./blocks/index/sub-list.scss";
+@use "./blocks/index/search.scss";
+@use "./blocks/index/map.scss";

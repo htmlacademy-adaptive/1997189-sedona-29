@@ -1,0 +1,37 @@
+.map {
+  min-height: 362px;//высота секции, чтоб следующая не сдвигалась ввверх
+}
+
+.map__wrapper {
+  position: relative;
+  height: 350px;
+}
+
+.map__box {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+
+.map__image {
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  object-fit: cover;
+}
+
+.map__nojs-wrapper {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+}
