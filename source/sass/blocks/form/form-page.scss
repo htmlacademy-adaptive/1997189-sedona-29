@@ -21,7 +21,6 @@
 @media (min-width: variables.$tablet-width) {
   .form-page {
     padding: 66px 60px 0 60px;
-
   }
 
   .form-page__caption {
@@ -37,5 +36,19 @@
   .form-page__form {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: variables.$desktop-width) {
+  .form-page {
+    padding: 117px 120px 0 120px;
+  }
+
+  .form-page__caption {
+    margin-bottom: 32px;
+  }
+
+  .form-page__text {
+    margin-bottom: unset;
   }
 }

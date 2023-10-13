@@ -17,3 +17,9 @@
     margin-bottom: 28px;
   }
 }
+
+@media (min-width: variables.$desktop-width) {
+  .group-contact__list {
+    padding: 0 0 0 50.5px;
+  }
+}

@@ -1,0 +1,23 @@
+@use "./common/variables.scss";
+
+.gallery-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+@media (min-width: variables.$tablet-width) {
+  .gallery-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 60px;
+  }
+}
+
+@media (min-width: variables.$desktop-width) {
+  .gallery-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: unset;
+  }
+}

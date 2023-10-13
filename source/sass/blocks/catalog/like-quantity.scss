@@ -1,0 +1,14 @@
+@use "./common/variables.scss";
+
+@media (min-width: variables.$tablet-width) {
+  .like-quantity {
+    display: block;
+    text-align: right;
+  }
+}
+
+@media (min-width: variables.$desktop-width) {
+  .like-quantity {
+    color: #ffffff;
+  }
+}

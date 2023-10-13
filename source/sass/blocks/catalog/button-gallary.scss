@@ -1,0 +1,33 @@
+@use "./common/variables.scss";
+
+.button-gallery {
+  background-color: transparent;
+  border: none;
+  position: relative;
+  width: 70px;
+  //max-width: 250px;
+  text-align: left;
+  padding: 0 0 0 37px;
+  margin: 0;
+  min-height: 23px;
+
+  &::before {
+    content: "";
+    width: 23px;
+    height: 21px;
+    position: absolute;
+    mask-image: url("../img/icons/sprite.svg#like-icon");
+    mask-repeat: no-repeat;
+    left: 0;
+    top: -4px;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+@media (min-width: variables.$desktop-width) {
+  .button-gallery {
+    &::before {
+      background-color: #ffffff;
+    }
+  }
+}

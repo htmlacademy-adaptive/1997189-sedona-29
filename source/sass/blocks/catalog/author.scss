@@ -1,0 +1,14 @@
+@use "./common/variables.scss";
+
+.author {
+  color: #333333;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: variables.$desktop-width) {
+    color: #ffffff;
+  }
+}
