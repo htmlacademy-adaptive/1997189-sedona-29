@@ -12,3 +12,9 @@
     border-bottom: none;
   }
 }
+
+@media (min-width: variables.$desktop-width) {
+  .form-list {
+    padding: unset;
+  }
+}

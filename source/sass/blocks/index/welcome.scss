@@ -11,7 +11,12 @@
   background-color: #bdb0af;
   background-position: center;
 
-  &--form {
+  &--one-word-logo {
+    padding-top: 52px;
+    min-height: 157px;
+  }
+
+  &--catalog {
     padding-top: 52px;
     min-height: 157px;
   }
@@ -49,14 +54,14 @@
       background-image: url("../img/back-desktop@2x.jpg");
     }
 
-    &--form {
+    &--one-word-logo {
       min-height: 288px;
     }
 
     &::after {
       //background-size: 100% 57px;
       width: 100%;
-      background: url("../img/icons/sprite.svg#welcome-triangle") center /100% 57px, linear-gradient(to right, #ffffff 0, #ffffff 1px, transparent 1px, transparent 1199px, #ffffff 1199px, #ffffff 100%);
+      background: url("../img/icons/sprite.svg#welcome-triangle") center /100% 57px no-repeat, linear-gradient(to right, #ffffff 0, #ffffff 1px, transparent 1px, transparent 1199px, #ffffff 1199px, #ffffff 100%);
     }
   }
 
@@ -64,7 +69,7 @@
     width: 461px;
     height: 350px;
 
-    &--form {
+    &--one-word-logo {
       height: 114px;
     }
   }
@@ -75,12 +80,8 @@
     padding-top: 78px;
     z-index: 1;
 
-    /*&::after {
-      //background-size: 100% 57px;
-      width: 100%;
-      background: url("../img/icons/sprite.svg#welcome-triangle") center /100% 57px, linear-gradient(to right, #ffffff 0, #ffffff 1px, transparent 1px, transparent 1199px, #ffffff 1199px, #ffffff 100%);
-    }*/
+    &--one-word-logo {
+      min-height: 300px;
+    }
   }
 }
-/*, linear-gradient(to right, #ffffff 0%, #ffffff 1%, transparent 1%, transparent 99%, #ffffff 99%, #ffffff 100%)*/
-/*background: url(../img/icons/sprite.svg#welcome-triangle) center /100% 57px;*/

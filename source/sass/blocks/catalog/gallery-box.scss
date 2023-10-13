@@ -1,0 +1,82 @@
+@use "./common/variables.scss";
+
+.gallery-box {
+  margin: 0;
+  padding: 0 20px 23px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.gallery-box__img {
+  width: 100%;
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.gallery-box__link {
+  display: block;
+  height: 280px;
+}
+
+.gallery-box__author {
+  margin-bottom: 17px;
+}
+
+.gallery-box__wrapper {
+  padding-top: 15px;
+}
+
+@media (min-width: variables.$tablet-width) {
+  .gallery-box {
+    padding: unset;
+
+    &--big {
+      grid-column: 1/-1;
+
+      & .gallery-box__link {
+        height: 400px;
+      }
+    }
+  }
+
+  .gallery-box__link {
+    height: 267px;
+  }
+
+  .gallery-box__wrapper {
+    background-color: #f2f2f2;
+    padding: 22px 20px 0;
+    display: grid;
+    grid-template-columns: 1fr 150px;
+    align-items: start;
+  }
+
+  .gallery-box__caption {
+    grid-column: 1/2;
+  }
+
+  .gallery-box__author {
+    grid-column: 1/2;
+  }
+}
+
+@media (min-width: variables.$desktop-width) {
+  .gallery-box {
+    padding: unset;
+    position: relative;
+
+    &--big {
+      grid-column: 1/-1;
+    }
+  }
+
+  .gallery-box__wrapper {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+  }
+}

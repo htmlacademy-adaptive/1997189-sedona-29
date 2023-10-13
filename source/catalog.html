@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+  <meta name="description" content="Сайт туристического города Седона.">
+  <meta name="viewport" content="width=device-width, initial-scale=1
+    ">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body class="page__body body">
+  <div class="body__container body__container--form">
+    <header class="body__header header ">
+      <nav class="header__nav nav">
+        <ul class="nav__list nav-list">
+          <li class="nav-list__item">
+            <a class="nav-list__item-link" href="index.html">Главная</a>
+          </li>
+          <li class="nav-list__item nav-list__item--current">
+            <a class="nav-list__item-link " href="#">Фото и видео</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__item-link" href="form.html">Форма Отзыва</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__item-link" href="#">HTML ACADEMY</a>
+          </li>
+        </ul>
+        <button class="nav__button toggle" type="button">
+          <span class="visually-hidden">Кнопка закрытия, открытия меню.</span>
+        </button>
+        <a class=" header__logo logo" href="index.html">
+
+            <img class="logo__img logo-img" src="img/logo-sedona.svg" width="185" height="96"
+              alt="Логотип города Седона.">
+        </a>
+      </nav>
+    </header>
+    <main class="body__main main">
+      <section class="main__welcome welcome welcome--one-word-logo">
+        <h1 class="visually-hidden">Сайт туристического города Седона.</h1>
+        <img class="welcome__image welcome-image welcome__image--one-word-logo" src="img/sedona.svg" width="229" height="39" alt="Добро пожаловать в Седону.">
+      </section>
+      <section class="main__gallery gallery">
+        <h2 class="gallery__caption caption caption--form">Фото и видео</h2>
+        <p class="gallery__text text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+        <ul class="gallery__list gallery-list">
+          <li class="gallery-list__item gallery-box gallery-box--big">
+            <a class="gallery-box__link" href="#">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)"
+                srcset="img/photo-catalog-desktop1.webp 1x, img/photo-catalog-desktop1@2x.webp 2x" width="1200" height="400">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/photo-catalog-tablet1.webp 1x, img/photo-catalog-tablet1@2x.webp 2x" width="648" height="400">
+              <source type="image/webp" srcset="img/photo-catalog-mobile1.webp 1x, img/photo-catalog-mobile1@2x.webp 2x" width="280" height="280">
+
+              <source media="(min-width: 1200px)" srcset="img/photo-catalog-desktop1.jpg 1x, img/photo-catalog-desktop1@2x.jpg 2x" type="image/jpg" width="1200" height="400">
+
+                  <source media="(min-width: 768px)" srcset="img/photo-catalog-tablet1@2x.jpg 1x, img/photo-catalog-tablet1@2x.jpg 2x" type="image/jpg" width="648" height="400">
+
+                <img class="gallery-box__img gallery-box__img1" width="280" height="280" src="img/photo-catalog-mobile1.jpg" srcset="img/photo-catalog-mobile1@2x.jpg 2x"   alt="">
+              </picture>
+            </a>
+<div class="gallery-box__wrapper">
+                  <h3 class="gallery-box__caption caption caption--catalog">Неродные просторы</h3>
+                  <p class="gallery-box__author author">Автор фото: Борис</p>
+                  <button class="gallery__button button-gallery">
+                    <span class="visually-hidden">Кнопка поставить лайк.</span>
+                    <span class="gallery__like-quantity like-quantity">1350</span>
+                  </button>
+                </div>
+          </li>
+
+          <li class="gallery-list__item gallery-box">
+            <a class="gallery-box__link" href="#">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)"
+                srcset="img/photo-catalog-desktop2.webp 1x, img/photo-catalog-desktop2@2x.webp 2x" width="1200" height="400">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/photo-catalog-tablet2.webp 1x, img/photo-catalog-tablet2@2x.webp 2x" width="648" height="400">
+              <source type="image/webp" srcset="img/photo-catalog-mobile2.webp 1x, img/photo-catalog-mobile2@2x.webp 2x" width="280" height="280">
+
+              <source media="(min-width: 1200px)" srcset="img/photo-catalog-desktop2.jpg 1x, img/photo-catalog-desktop2@2x.jpg 2x" type="image/jpg" width="1200" height="400">
+
+                  <source media="(min-width: 768px)" srcset="img/photo-catalog-tablet2@2x.jpg 1x, img/photo-catalog-tablet2@2x.jpg 2x" type="image/jpg" width="648" height="400">
+
+                <img class="gallery-box__img gallery-box__img2" width="280" height="280" src="img/photo-catalog-mobile2.jpg" srcset="img/photo-catalog-mobile2@2x.jpg 2x"   alt="">
+              </picture>
+            </a>
+<div class="gallery-box__wrapper">
+                  <h3 class="gallery-box__caption caption caption--catalog">Неродные просторы</h3>
+                  <p class="gallery-box__author author">Автор фото: Борис</p>
+                  <button class="gallery__button button-gallery">
+                    <span class="visually-hidden">Кнопка поставить лайк.</span>
+                    <span class="gallery__like-quantity like-quantity">1350</span>
+                  </button>
+                </div>
+          </li>
+
+          <li class="gallery-list__item gallery-box">
+            <a class="gallery-box__link" href="#">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)"
+                srcset="img/photo-catalog-desktop3.webp 1x, img/photo-catalog-desktop3@2x.webp 2x" width="1200" height="400">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/photo-catalog-tablet3.webp 1x, img/photo-catalog-tablet3@2x.webp 2x" width="648" height="400">
+              <source type="image/webp" srcset="img/photo-catalog-mobile3.webp 1x, img/photo-catalog-mobile3@2x.webp 2x" width="280" height="280">
+
+              <source media="(min-width: 1200px)" srcset="img/photo-catalog-desktop3.jpg 1x, img/photo-catalog-desktop3@2x.jpg 2x" type="image/jpg" width="1200" height="400">
+
+                  <source media="(min-width: 768px)" srcset="img/photo-catalog-tablet3@2x.jpg 1x, img/photo-catalog-tablet3@2x.jpg 2x" type="image/jpg" width="648" height="400">
+
+                <img class="gallery-box__img gallery-box__img3" width="280" height="280" src="img/photo-catalog-mobile3.jpg" srcset="img/photo-catalog-mobile3@2x.jpg 2x"   alt="">
+              </picture>
+            </a>
+<div class="gallery-box__wrapper">
+                  <h3 class="gallery-box__caption caption caption--catalog">Неродные просторы</h3>
+                  <p class="gallery-box__author author">Автор фото: Борис</p>
+                  <button class="gallery__button button-gallery">
+                    <span class="visually-hidden">Кнопка поставить лайк.</span>
+                    <span class="gallery__like-quantity like-quantity">1350</span>
+                  </button>
+                </div>
+          </li>
+
+          <li class="gallery-list__item gallery-box">
+            <a class="gallery-box__link" href="#">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)"
+                srcset="img/photo-catalog-desktop4.webp 1x, img/photo-catalog-desktop4@2x.webp 2x" width="1200" height="400">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/photo-catalog-tablet4.webp 1x, img/photo-catalog-tablet4@2x.webp 2x" width="648" heigh4="400">
+              <source type="image/webp" srcset="img/photo-catalog-mobile4.webp 1x, img/photo-catalog-mobile4@2x.webp 2x" width="280" height="280">
+
+              <source media="(min-width: 1200px)" srcset="img/photo-catalog-desktop4.jpg 1x, img/photo-catalog-desktop4@2x.jpg 2x" type="image/jpg" width="1200" height="400">
+
+                  <source media="(min-width: 768px)" srcset="img/photo-catalog-tablet4@2x.jpg 1x, img/photo-catalog-tablet4@2x.jpg 2x" type="image/jpg" width="648" height="400">
+
+                <img class="gallery-box__img gallery-box__img4" width="280" height="280" src="img/photo-catalog-mobile4.jpg" srcset="img/photo-catalog-mobile4@2x.jpg 2x"   alt="">
+              </picture>
+            </a>
+<div class="gallery-box__wrapper">
+                  <h3 class="gallery-box__caption caption caption--catalog">Неродные просторы</h3>
+                  <p class="gallery-box__author author">Автор фото: Борис</p>
+                  <button class="gallery__button button-gallery">
+                    <span class="visually-hidden">Кнопка поставить лайк.</span>
+                    <span class="gallery__like-quantity like-quantity">1350</span>
+                  </button>
+                </div>
+          </li>
+
+        </ul>
+      </section>
+
+    </main>
+  </div>
+  <script src="./js/script.js"></script>
+</body>
+</html>

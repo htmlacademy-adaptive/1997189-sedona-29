@@ -22,3 +22,9 @@
     padding: 0 28.5px 0 0;
   }
 }
+
+@media (min-width: variables.$tablet-width) {
+  .group-name__list {
+    padding: 0 48.5px 0 0;
+  }
+}

@@ -31,8 +31,6 @@
     mask-image: url("../img/icons/sprite.svg#tick");
     mask-repeat: no-repeat;
     background-color: #333333;
-     // mask-position: center;
-    //mask-size: 22px 16px;
     position: absolute;
     top: 15px;
     left: 12px;
@@ -50,4 +48,3 @@
 .checkbox__input:checked:active + .checkbox__row::after svg {
   opacity: 0.3;
 }
-
