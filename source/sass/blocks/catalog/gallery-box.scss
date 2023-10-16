@@ -30,6 +30,7 @@
 @media (min-width: variables.$tablet-width) {
   .gallery-box {
     padding: unset;
+    border-bottom: none;
 
     &--big {
       grid-column: 1/-1;
@@ -45,11 +46,21 @@
   }
 
   .gallery-box__wrapper {
-    background-color: #f2f2f2;
+    //background-color: #f2f2f2;
     padding: 22px 20px 0;
     display: grid;
     grid-template-columns: 1fr 150px;
     align-items: start;
+
+
+    .gallery-list__item:nth-child(even) > &,
+    .gallery-list__item:first-child > & {
+      background-color: #f2f2f2;
+    }
+
+    .gallery-list__item:nth-child(odd):not(:first-child) > & {
+      background-color: #eaeaea;
+    }
   }
 
   .gallery-box__caption {
@@ -78,5 +89,9 @@
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.3);
     z-index: 1;
+
+    .gallary-box--big > & {
+      background-color: #f2f2f2;
+    }
   }
 }

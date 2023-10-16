@@ -6,11 +6,19 @@
   list-style-type: none;
 }
 
+.gallery-list__item:not(:last-child) {
+  margin-bottom: 24px;
+}
+
 @media (min-width: variables.$tablet-width) {
   .gallery-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 0 60px;
+  }
+
+  .gallery-list__item:nth-child(odd) .gallery-box__wrapper {
+//background-color: #eaeaea;
   }
 }
 
