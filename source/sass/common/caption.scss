@@ -55,6 +55,7 @@
     &--line-through {
       position: relative;
       width: 100%;
+      z-index: 1;
 
       &::before {
         content: "";
@@ -63,8 +64,13 @@
         height: 1px;
         background-color: #dbdbdb;
         position: absolute;
-        top: 15px;
+        top: 13px;
         z-index: -1;
+        left: 0;
+
+        .group-places & {
+          top: 25px;
+        }
       }
     }
   }

@@ -7,8 +7,9 @@
 }
 
 .feedback-text__caption {
-  padding-top: 24px;
-  margin-bottom: 20px;
+  padding: 24px 20px 0;
+  display: block;
+  margin: 0 auto 20px;
 }
 
 .feedback-text__text {
@@ -18,7 +19,7 @@
   background-color: #f2f2f2;
   padding: 16px;
   border: none;
-  margin-bottom: 52px;
+  margin-bottom: 53px;
   color: #000000;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
@@ -52,9 +53,22 @@
 @media (min-width: variables.$tablet-width) {
   .feedback-text__caption {
     padding-top: unset;
+    margin-bottom: 28px;
   }
 
   .feedback-text {
     padding: unset;
+  }
+
+  .feedback-text__text {
+    min-height: 159px;
+    margin-bottom: 42px;
+  }
+}
+
+
+@media (min-width: variables.$tablet-width) {
+  .feedback-text__text {
+    max-width: 768px;
   }
 }

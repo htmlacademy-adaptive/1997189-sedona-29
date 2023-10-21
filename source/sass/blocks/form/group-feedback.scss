@@ -12,11 +12,21 @@
   .group-feedback__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding: 9px 20px 33px 36px;
   }
 }
 
 @media (min-width: variables.$desktop-width) {
   .group-feedback__list {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 263px);
+    width: 960px;
+    //padding: unset;
+    margin: 0 auto;
+    padding: 9px 54px 33px 54px;
+    column-gap: 45px;
+  }
+
+  .group-feedback__caption {
+    margin-bottom: 35px;
   }
 }

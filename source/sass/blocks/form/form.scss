@@ -1,26 +1,26 @@
 @use "./common/variables.scss";
 
-.form {
-  &__caption {
-    text-align: center;
-    padding-top: 24px;
-    margin-bottom: 19px;
-  }
-
-  &__explanation {
-    display: block;
-    padding: 0;
-    margin: 0;
-    color: rgba(51, 51, 51, 0.6);
-    text-align: right;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 21px;
-    text-transform: uppercase;
-    margin-left: auto;
-    width: 150px;
-  }
+.form__caption {
+  text-align: center;
+  display: block;
+  padding: 24px 20px 0;
+  margin: 0 auto 19px;
 }
+
+.form__explanation {
+  display: block;
+  padding: 0;
+  margin: 0;
+  color: rgba(51, 51, 51, 0.6);
+  text-align: right;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 21px;
+  text-transform: uppercase;
+  margin-left: auto;
+  width: 150px;
+}
+
 
 .form__group {
   border: none;
@@ -31,11 +31,21 @@
 .form__button {
   margin: 0 auto;
   width: 100%;
+
+  &:nth-child(n + 2) {
+    margin-top: 10px;
+  }
+}
+
+.form__feedback-text {
+  margin-bottom: 23px;
 }
 
 @media (min-width: variables.$tablet-width) {
   .form__caption {
-    padding-top: unset;
+    padding: unset;
+    margin: unset;
+    margin-bottom: -13px;
   }
 
   .form__button {
@@ -44,24 +54,18 @@
     align-self: start;
   }
 
-  /*.form__caption-text {
-    display: inline-block;
-    background-color: #ffffff;
-    width: 400px;
-    padding-left: 25px;
-    padding-right: 25px;
-  }*/
-
   .form__group {
-    margin-top: 42px;
+    //margin-top: 20px;
   }
 
   .form__feedback {
     grid-column: 1/-1;
+    margin-top: 47px;
   }
 
   .form__places {
     grid-column: 1/-1;
+    margin-bottom: 25px;
   }
 
   .form__feedback-text {
@@ -84,7 +88,25 @@
 }
 
 @media (min-width: variables.$desktop-width) {
-  .form__group {
-    margin-top: 48px;
+  .form__feedback {
+    margin-top: 73px;
+    margin-bottom: 25px;
+  }
+
+  .form__feedback-text {
+    margin-bottom: 64px;
+  }
+
+  .form__places {
+    margin-bottom: 70px;
+  }
+
+  .form__button {
+    width: 384px;
+  }
+
+  .form__button-wrapper {
+    max-width: 768px;
+    margin: 0 auto;
   }
 }

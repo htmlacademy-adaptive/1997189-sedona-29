@@ -1,22 +1,30 @@
 @use "./common/variables.scss";
 
 .group-places__item {
-  margin-bottom: 17px;
+  margin-bottom: 16px;
 }
 
 .group-places__list {
-  padding-bottom: 5px;
+  padding-bottom: 9px;
 }
 
 @media (min-width: variables.$tablet-width) {
   .group-places__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding: 10px 84px 0 84px;
+    column-gap: 31px;
   }
 }
 
 @media (min-width: variables.$desktop-width) {
   .group-places__list {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 191px 191px 170px 1fr;
+    padding: 10px 45px 0 45px;
+    column-gap: 44px;
+  }
+
+  .group-places__caption {
+    margin-bottom: 49px;
   }
 }

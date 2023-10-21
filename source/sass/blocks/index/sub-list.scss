@@ -65,7 +65,16 @@
   .sub-list__item {
     display: flex;
     flex-direction: column;
-    padding: 126px 43px 50px;
+    padding: 127px 43px 50px;
+
+    &--icon2 {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+
+    &--icon3 {
+      padding-top: 124px;
+    }
 
 
     &--icon1::before,
@@ -73,7 +82,7 @@
       width: 80px;
       height: 80px;
       background-size: 77px 76px;
-      top: 28px;
+      top: 24px;
       left: calc(50% - 40px);
     }
 
@@ -93,5 +102,38 @@
 
   .sub-list__item-text {
     text-align: center;
+  }
+}
+
+@media (min-width: variables.$desktop-width) {
+  .sub-list {
+    padding: 32px 0 19px;
+  }
+
+  .sub-list__item {
+    padding-top: 136px;
+
+    &--icon1::before,
+    &--icon2::before {
+      top: 33px;
+      left: calc(50% - 42px);
+    }
+
+    &--icon3 {
+      padding-top: 139px;
+
+      &::before {
+        background-size: 90px;
+        width: 90px;
+        height: 78px;
+        top: 35px;
+        left: calc(50% - 46px);
+      }
+    }
+  }
+
+  .sub-list__item--icon1 .sub-list__item-text {
+    padding-left: 18px;
+    padding-right: 18px;
   }
 }

@@ -1,0 +1,32 @@
+@use "./common/variables.scss";
+
+@media (min-width: variables.$tablet-width) {
+  .main__gallery {
+    margin-bottom: 55px;
+  }
+
+  .main__video {
+    margin-bottom: 41px;
+  }
+}
+
+
+@media (min-width: variables.$tablet-width) {
+  .main__gallery {
+    margin-bottom: 56px;
+  }
+
+  .main__video {
+    margin-bottom: 41px;
+  }
+}
+
+@media (min-width: variables.$desktop-width) {
+  .main__gallery {
+    margin-bottom: 59px;
+  }
+
+  .main__video {
+    margin-bottom: 84px;
+  }
+}

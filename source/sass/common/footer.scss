@@ -2,12 +2,13 @@
 
 .footer {
   margin: 0 auto;
-  padding: 59px 20px 33px;
+  padding: 35px 20px 33px;
   column-gap: 113px;
+  align-items: flex-start;
 }
 
 .footer__link {
-  margin: 0 auto 28px;
+  margin: 0 auto 29px;
   display: block;
   text-align: center;
   font-size: 21px;
@@ -15,8 +16,9 @@
   line-height: 26px;
   text-transform: uppercase;
   color: #000000;
-  max-width: 150px;
+  width: 136px;
   padding: 1px;
+
 
   &:hover,
   &:focus {
@@ -29,7 +31,7 @@
 }
 
 .footer__socials-list {
-  margin: 0 auto 30px;
+  margin: 0 auto 31px;
 }
 
 @media (min-width: variables.$tablet-width) {
@@ -37,6 +39,14 @@
     display: flex;
     flex-wrap: wrap;
     column-gap: 113px;
+  }
+
+  .footer__link {
+    margin-top: 11px;
+  }
+
+  .footer__logo {
+    margin-top: 8px;
   }
 }
 

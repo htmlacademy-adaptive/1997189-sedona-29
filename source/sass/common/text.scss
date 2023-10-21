@@ -23,3 +23,20 @@
     }
   }
 }
+
+
+.text__break {
+  display: none;
+
+  @media (min-width: variables.$tablet-width) {
+    display: inherit;
+  }
+}
+
+.text__desktop-break {
+  display: none;
+
+  @media (min-width: variables.$tablet-width) {
+    display: inherit;
+  }
+}
