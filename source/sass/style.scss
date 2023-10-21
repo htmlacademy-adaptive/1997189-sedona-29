@@ -9,11 +9,12 @@
 @use "./common/nav.scss";
 @use "./common/logo.scss";
 @use "./common/header.scss";
-@use "./common/footer.scss";
+@use "./common/main.scss";
 @use "./common/socials.scss";
 @use "./common/caption.scss";
 @use "./common/text.scss";
 @use "./common/footer-logo.scss";
+@use "./common/footer.scss";
 @use "./common/button.scss";
 @use "./blocks/index/welcome.scss";
 @use "./blocks/index/advantages.scss";
@@ -43,4 +44,3 @@
 @use "./blocks/catalog/gallery-list.scss";
 @use "./blocks/catalog/like-quantity.scss";
 @use "./blocks/catalog/video.scss";
-

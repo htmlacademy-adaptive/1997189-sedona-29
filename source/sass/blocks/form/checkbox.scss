@@ -1,5 +1,8 @@
+@use "./common/variables.scss";
+
 .checkbox__label {
   cursor: pointer;
+  display: inline-block;
 }
 
 .checkbox__row {
@@ -47,4 +50,10 @@
 
 .checkbox__input:checked:active + .checkbox__row::after svg {
   opacity: 0.3;
+}
+
+@media (min-width: variables.$desktop-width) {
+  .checkbox__row {
+    max-width: 185px;
+  }
 }

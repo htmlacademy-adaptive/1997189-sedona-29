@@ -17,8 +17,17 @@
     padding: 0 60px;
   }
 
-  .gallery-list__item:nth-child(odd) .gallery-box__wrapper {
-//background-color: #eaeaea;
+  .gallery-list__item:not(:last-child) {
+    margin-bottom: unset;
+  }
+
+  .gallery-list__item:nth-child(even),
+  .gallery-list__item:first-child {
+    background-color: #f2f2f2;
+  }
+
+  .gallery-list__item:nth-child(odd):not(:first-child) {
+    background-color: #eaeaea;
   }
 }
 
@@ -27,5 +36,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding: unset;
+  }
+
+  .gallery-list__item:nth-child(n + 2) .gallery-box__wrapper {
+    padding-left: 25px;
+    padding-top: 18px;
   }
 }

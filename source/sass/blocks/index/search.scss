@@ -20,11 +20,26 @@
 
 @media (min-width: variables.$tablet-width) {
   .search {
-    padding: 60px 30px;
+    padding: 60px 30px 45px;
   }
 
   .search__caption {
     font-size: 30px;
     line-height: 26px;
+    margin-bottom: 32px;
+  }
+
+  .search__text {
+    margin-bottom: 45px;
+  }
+}
+
+@media (min-width: variables.$desktop-width) {
+  .search {
+    padding: 60px 30px 56px;
+  }
+
+  .search__caption {
+    margin-bottom: 34px;
   }
 }

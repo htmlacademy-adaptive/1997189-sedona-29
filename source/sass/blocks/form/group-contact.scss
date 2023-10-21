@@ -15,11 +15,16 @@
 
   .group-contact__caption {
     margin-bottom: 28px;
+    padding: 41px 5px 0 32px;
   }
 }
 
 @media (min-width: variables.$desktop-width) {
   .group-contact__list {
     padding: 0 0 0 50.5px;
+  }
+
+  .group-contact__caption {
+    padding-left: 53px;
   }
 }

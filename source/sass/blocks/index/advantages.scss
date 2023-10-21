@@ -43,3 +43,13 @@
     margin-bottom: 29px;
   }
 }
+
+@media (min-width: variables.$desktop-width) {
+  .advantages {
+    padding-top: 60px;
+  }
+
+  .advantages__text {
+    margin-bottom: 30px;
+  }
+}

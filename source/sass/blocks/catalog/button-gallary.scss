@@ -4,12 +4,13 @@
   background-color: transparent;
   border: none;
   position: relative;
-  width: 70px;
-  //max-width: 250px;
+  min-width: 70px;
+  max-width: 250px;
   text-align: left;
   padding: 0 0 0 37px;
   margin: 0;
   min-height: 23px;
+  display: block;
 
   &::before {
     content: "";
@@ -20,7 +21,26 @@
     mask-repeat: no-repeat;
     left: 0;
     top: -4px;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: #000000;
+  }
+}
+
+@media (min-width: variables.$tablet-width) {
+  .button-gallery {
+    display: flex;
+    column-gap: 9px;
+    flex-shrink: 0;
+    padding-left: unset;
+    justify-content: flex-end;
+    align-items: flex-start;
+    min-width: 70px;
+    max-width: 106px;
+
+    &::before {
+      position: static;
+      margin-top: -3px;
+      flex-shrink: 0;
+    }
   }
 }
 
