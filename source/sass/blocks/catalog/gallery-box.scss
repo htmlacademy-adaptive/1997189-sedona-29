@@ -6,6 +6,11 @@
   border-bottom: 1px solid #e5e5e5;
 }
 
+.gallery-box__caption,
+.gallery-box__author {
+  padding-right: 15px;
+}
+
 .gallery-box__img {
   width: 100%;
   display: block;
@@ -48,7 +53,7 @@
   .gallery-box__wrapper {
     padding: 22px 20px 0;
     display: grid;
-    grid-template-columns: 1fr 106px;
+    grid-template-columns: 1fr 91px;
     align-items: start;
   }
 

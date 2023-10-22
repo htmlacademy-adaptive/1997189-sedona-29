@@ -14,6 +14,10 @@
     grid-template-columns: 1fr 1fr;
     padding: 9px 20px 33px 36px;
   }
+
+  .group-feedback__caption {
+    margin-bottom: 19px;
+  }
 }
 
 @media (min-width: variables.$desktop-width) {

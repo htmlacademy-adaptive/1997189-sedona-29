@@ -52,6 +52,12 @@
   opacity: 0.3;
 }
 
+@media (min-width: variables.$tablet-width) {
+  .checkbox__row {
+    padding-top: 10px;
+  }
+}
+
 @media (min-width: variables.$desktop-width) {
   .checkbox__row {
     max-width: 185px;

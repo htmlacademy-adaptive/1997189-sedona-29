@@ -45,7 +45,7 @@
   .form__caption {
     padding: unset;
     margin: unset;
-    margin-bottom: -13px;
+    //margin-bottom: -13px;
   }
 
   .form__button {
@@ -83,13 +83,13 @@
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
-    margin-top: 25px;
+    margin-top: 21px;
   }
 }
 
 @media (min-width: variables.$desktop-width) {
   .form__feedback {
-    margin-top: 73px;
+    margin-top: 70px;
     margin-bottom: 25px;
   }
 

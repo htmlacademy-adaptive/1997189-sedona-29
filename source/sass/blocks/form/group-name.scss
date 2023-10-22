@@ -15,9 +15,14 @@
   }
 
   .group-name__caption {
+    //margin: 0 auto;
     margin-bottom: 28px;
     padding-top: 41px;
-    margin-left: -14px;
+    //margin-left: -14px;
+    text-align: center;
+    display: block;
+    padding-right: 29px;
+    width: 100%;
   }
 
   .group-name__list {
@@ -26,20 +31,14 @@
 }
 
 @media (min-width: variables.$desktop-width) {
-  .group-name {
-    padding-top: 41px;
-  }
-
   .group-name__list {
     padding: 0 48.5px 0 0;
   }
 
   .group-name__caption {
     padding: unset;
-    margin-left: -24px;
     padding-top: 41px;
-    margin-bottom: -14px;
-    max-width: 278px;
+    padding-right: 49px;
   }
 
   .group-name__item:last-child {
