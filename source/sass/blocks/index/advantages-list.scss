@@ -48,6 +48,7 @@
 }
 
 .advantages-list__item {
+  &:nth-child
   &--box {
     position: relative;
     //padding: 0 34px 0 34px;

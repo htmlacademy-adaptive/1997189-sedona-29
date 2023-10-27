@@ -24,7 +24,7 @@ import { stacksvg } from "gulp-stacksvg";
 
 // Styles
 
-export const styles = () => {
+const styles = () => {
   return gulp.src('source/sass/style.scss', { sourcemaps: true })
     .pipe(plumber())
     .pipe(sass().on('error', sass.logError))
@@ -43,42 +43,28 @@ const reload = (done) => {
 };
 
 //html
-export const html = () => {
-  return gulp.src('source/*/.html')
+const html = () => {
+  return gulp.src('source/**/*.html')
     .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest('build'));
 };
 
 //Images
 const optimizeImages = () => {
-  return gulp.src('source/img/*/.{jpg,png}')
+  return gulp.src('source/img/**/*.{jpg,png}')
   .pipe(squoosh())
   .pipe(gulp.dest('build/img'));
 };
 
-//const copyImages = () => {
-//return gulp.src('source/img/*/.{jpg,png}')
-//.pipe(gulp.dest('build/img'));
-//};
-
 const copyImages = () => {
-return gulp.src('source/img/*/.{jpg,png,mp4,webm}')
-.pipe(gulp.dest('build/img'));
+  return gulp.src('source/img/**/*.{jpg,png,mp4,webm}')
+  .pipe(gulp.dest('build/img'));
 };
 
-/*const sprite = () => {
-  return gulp.src ('source/img/iconsSprite/*.svg')
-  .pipe(svgo())
-  .pipe(svgstore ({
-    inlineSvg: true
-  }))
-  .pipe(rename('sprite.svg'))
-  .pipe(gulp.dest('build/img/iconsSprite'));
-};*/
 
 //webp
 const createWebp = () => {
-  return gulp.src('source/img/*/.{jpg,png}')
+  return gulp.src('source/img/**/*.{jpg,png}')
   .pipe(squoosh({
     webp: {}
   }))
@@ -87,7 +73,7 @@ const createWebp = () => {
 
 //стэк
 export const makeStack = () => {
-  return gulp.src('source/img/icons/*/.svg')
+  return gulp.src('source/img/icons/**/*.svg')
   .pipe(svgo())
   .pipe(stacksvg({output: 'sprite'}))
   .pipe(gulp.dest('build/img/icons'));
@@ -103,7 +89,7 @@ const scripts = () => {
 
 //Svg
 const svg = () => {
-  return gulp.src (['source/img/*/.svg','!source/img/icons/*.svg'])
+  return gulp.src (['source/img/**/*.svg','!source/img/icons/*.svg'])
   .pipe(svgo())
   .pipe(gulp.dest('build/img'));
 };
@@ -111,7 +97,7 @@ const svg = () => {
 //шрифты, манифест асинхронный, сделали синхронным
 export const copy = (done) => {
   gulp.src([
-  "source/fonts/*/.{woff2,woff}",
+  "source/fonts/**/*.{woff2,woff}",
   "source/*.ico",
   ], {
   base: "source"
@@ -154,7 +140,7 @@ export const clean = () => {
 // Watcher
 
 const watcher = () => {
-  gulp.watch('source/sass/*/.scss', gulp.series(styles));
+  gulp.watch('source/sass/**/*.scss', gulp.series(styles));
   gulp.watch("source/js/script.js", gulp.series(scripts));
   gulp.watch("source/js/*.js", gulp.series(scripts, reload));
   //gulp.watch('source/*.html').on('change', browser.reload);
@@ -175,14 +161,14 @@ export const build = gulp.series(
     makeStack,
     createWebp
   ),
-  )
+  );
 
 
 export default gulp.series(
   clean,
   copy,
-  copyImages,
   copyManifest,
+  copyImages,
   gulp.parallel (
     styles,
     html,
