@@ -1,20 +1,84 @@
+@use "./common/variables.scss";
+
 .modal {
   width: 320px;
   min-height: 280px;
   background-color: #ffffff;
-  padding: 45px 42px 35px 41px;
+  padding: 45px 42px 35px 43px;
+
+  &--success {
+    min-height: 323px;
+    padding: 40px 0 0;
+  }
 }
 
 .modal__caption {
-  margin: 0;
+  margin: 0 0 25px;
   padding: 0;
+  text-transform: uppercase;
 }
 
 .modal__text {
   padding: 0;
-  margin: 0;
+  margin: 0 0 25px;
+
+  .modal--success & {
+    padding: 0 33px;
+    margin-bottom: 50px;
+  }
 }
 
 .modal__button {
   width: 100%;
+}
+
+.modal__button-wrapper {
+  width: 180px;
+  margin: 0 auto;
+
+  .modal--success & {
+    width: 100%;
+    padding: 20px;
+    background-color: #f2f2f2;
+  }
+}
+
+@media (min-width: variables.$tablet-width) {
+  .modal {
+    width: 400px;
+    min-height: 347px;
+    padding: 48px 62px 43px;
+
+    &--success {
+      width: 640px;
+      padding: 44px 0 0;
+    }
+  }
+
+  .modal__caption {
+    padding: 0 13px;
+  }
+
+  .modal__text {
+    margin-bottom: 45px;
+
+    .modal--success & {
+      padding: 0 75px;
+    }
+  }
+
+  .modal__button {
+    width: 100%;
+    font-size: 21px;
+  }
+
+
+  .modal__button-wrapper {
+    width: 271px;
+
+    .modal--success & {
+      width: 100%;
+      padding: 44px 91px;
+    }
+  }
 }

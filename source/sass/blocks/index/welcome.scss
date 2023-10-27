@@ -14,6 +14,7 @@
   &--one-word-logo {
     padding-top: 52px;
     min-height: 157px;
+    background-position: bottom;
   }
 
   &--catalog {
@@ -79,10 +80,12 @@
   .welcome {
     padding-top: 78px;
     z-index: 1;
+    background-position: center top -87px;
 
     &--one-word-logo {
       min-height: 300px;
       padding-top: 84px;
+      background-position: bottom -140px right;
     }
   }
 }
