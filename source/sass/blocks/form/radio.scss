@@ -46,3 +46,9 @@
 .radio__input:checked:active + .radio__row::after {
   background-color: rgba(51, 51, 51, 0.3);
 }
+
+.radio__input:disabled + .radio__row::after,
+.radio__input:disabled + .radio__row::before,
+.radio__input:disabled + .radio__row {
+  opacity: 0.3;
+}

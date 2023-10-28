@@ -52,6 +52,13 @@
   opacity: 0.3;
 }
 
+.checkbox__input:disabled + .checkbox__row::after,
+.checkbox__input:disabled + .checkbox__row::before,
+.checkbox__input:disabled + .checkbox__row {
+  opacity: 0.3;
+}
+
+
 @media (min-width: variables.$tablet-width) {
   .checkbox__row {
     padding-top: 10px;

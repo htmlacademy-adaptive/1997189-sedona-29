@@ -54,6 +54,10 @@
   &:hover {
     background-color: #e5e5e5;
   }
+
+  &:disabled {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: variables.$tablet-width) {

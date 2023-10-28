@@ -4,27 +4,19 @@ import sass from 'gulp-dart-sass';
 import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
-
 import csso from 'postcss-csso';
-
 import rename from 'gulp-rename';//только тут
-
 import htmlmin from 'gulp-htmlmin';
-
 import terser from 'gulp-terser';//скрипты
-
 import squoosh from 'gulp-libsquoosh';
-
 import svgstore from 'gulp-svgstore';//для спрайта
-
 import svgo from 'gulp-svgmin';
 import { deleteAsync } from 'del';
 import { stacksvg } from "gulp-stacksvg";
 
 
 // Styles
-
-const styles = () => {
+export const styles = () => {
   return gulp.src('source/sass/style.scss', { sourcemaps: true })
     .pipe(plumber())
     .pipe(sass().on('error', sass.logError))
@@ -61,7 +53,6 @@ const copyImages = () => {
   .pipe(gulp.dest('build/img'));
 };
 
-
 //webp
 const createWebp = () => {
   return gulp.src('source/img/**/*.{jpg,png}')
@@ -79,7 +70,6 @@ export const makeStack = () => {
   .pipe(gulp.dest('build/img/icons'));
 };
 
-
 //Scripts
 const scripts = () => {
   return gulp.src('source/js/*.js')
@@ -94,7 +84,7 @@ const svg = () => {
   .pipe(gulp.dest('build/img'));
 };
 
-//шрифты, манифест асинхронный, сделали синхронным
+//шрифты, манифест
 export const copy = (done) => {
   gulp.src([
   "source/fonts/**/*.{woff2,woff}",
@@ -118,7 +108,6 @@ export const copy = (done) => {
     };
 
 // Server
-
 const server = (done) => {
   browser.init({
     server: {

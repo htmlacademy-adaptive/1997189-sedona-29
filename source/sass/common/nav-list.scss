@@ -10,7 +10,7 @@
   text-transform: uppercase;
   color: #ffffff;
   background-color: #81b3d2;
-  position: absolute;
+  position: relative;
   z-index: 3;
   top: 0;
   left: 0;
@@ -43,7 +43,6 @@
   color: inherit;
   display: block;
 }
-
 
 @media (min-width: 768px) {
   .nav-list {
