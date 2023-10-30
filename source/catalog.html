@@ -5,15 +5,15 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
   <meta name="description" content="Сайт туристического города Седона.">
-  <meta name="viewport" content="width=device-width, initial-scale=1
-    ">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="stylesheet" href="css/style.min.css">
   <link rel="preload" href="fonts/ptsans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body class="page__body body">
   <div class="body__container body__container--form">
     <header class="body__header header ">
@@ -36,74 +36,107 @@
           <span class="visually-hidden">Кнопка закрытия, открытия меню.</span>
         </button>
         <a class=" header__logo logo" href="index.html">
-          <img class="logo__img logo-img" src="img/logo-sedona.svg" width="185" height="96" alt="Логотип города Седона.">
+          <img class="logo__img logo-img" src="img/logo-sedona.svg" width="185" height="96"
+            alt="Логотип города Седона.">
         </a>
       </nav>
     </header>
     <main class="body__main main">
       <section class="main__welcome welcome welcome--one-word-logo">
         <h1 class="visually-hidden">Сайт туристического города Седона.</h1>
-        <img class="welcome__image welcome-image welcome__image--one-word-logo" src="img/sedona.svg" width="229" height="39" alt="Добро пожаловать в Седону.">
+        <img class="welcome__image welcome-image welcome__image--one-word-logo" src="img/sedona.svg" width="229"
+          height="39" alt="Добро пожаловать в Седону.">
       </section>
       <section class="main__gallery gallery">
         <h2 class="gallery__caption caption caption--form">Фото и видео</h2>
-        <p class="gallery__text text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+        <p class="gallery__text text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о
+          политике и экономике.</p>
         <ul class="gallery__list gallery-list">
           <li class="gallery-list__item gallery-box gallery-box--big">
             <a class="gallery-box__link" href="#">
               <picture>
                 <source type="image/webp" media="(min-width: 1200px)"
-                srcset="img/photo-catalog-desktop1.webp 1x, img/photo-catalog-desktop1@2x.webp 2x" width="1200" height="400">
-              <source type="image/webp" media="(min-width: 768px)"
-                srcset="img/photo-catalog-tablet1.webp 1x, img/photo-catalog-tablet1@2x.webp 2x" width="648" height="400">
-              <source type="image/webp" srcset="img/photo-catalog-mobile1.webp 1x, img/photo-catalog-mobile1@2x.webp 2x" width="280" height="280">
-              <source media="(min-width: 1200px)" srcset="img/photo-catalog-desktop1.jpg 1x, img/photo-catalog-desktop1@2x.jpg 2x" type="image/jpg" width="1200" height="400">
-                  <source media="(min-width: 768px)" srcset="img/photo-catalog-tablet1@2x.jpg 1x, img/photo-catalog-tablet1@2x.jpg 2x" type="image/jpg" width="648" height="400">
-                <img class="gallery-box__img gallery-box__img1" width="280" height="280" src="img/photo-catalog-mobile1.jpg" srcset="img/photo-catalog-mobile1@2x.jpg 2x" alt="Виды города Седона.">
+                  srcset="img/photo-catalog-desktop1.webp 1x, img/photo-catalog-desktop1@2x.webp 2x" width="1200"
+                  height="400">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/photo-catalog-tablet1.webp 1x, img/photo-catalog-tablet1@2x.webp 2x" width="648"
+                  height="400">
+                <source type="image/webp"
+                  srcset="img/photo-catalog-mobile1.webp 1x, img/photo-catalog-mobile1@2x.webp 2x" width="280"
+                  height="280">
+                <source media="(min-width: 1200px)"
+                  srcset="img/photo-catalog-desktop1.jpg 1x, img/photo-catalog-desktop1@2x.jpg 2x" type="image/jpg"
+                  width="1200" height="400">
+                <source media="(min-width: 768px)"
+                  srcset="img/photo-catalog-tablet1@2x.jpg 1x, img/photo-catalog-tablet1@2x.jpg 2x" type="image/jpg"
+                  width="648" height="400">
+                <img class="gallery-box__img gallery-box__img1" width="280" height="280"
+                  src="img/photo-catalog-mobile1.jpg" srcset="img/photo-catalog-mobile1@2x.jpg 2x"
+                  alt="Виды города Седона.">
               </picture>
             </a>
-<div class="gallery-box__wrapper">
-                  <h3 class="gallery-box__caption caption caption--catalog">Неродные просторы</h3>
-                  <p class="gallery-box__author author">Автор фото: Борис</p>
-                  <button class="gallery__button button-gallery">
-                    <span class="visually-hidden">Кнопка поставить лайк.</span>
-                    <span class="gallery__like-quantity like-quantity">1350</span>
-                  </button>
-                </div>
+            <div class="gallery-box__wrapper">
+              <h3 class="gallery-box__caption caption caption--catalog">Неродные просторы</h3>
+              <p class="gallery-box__author author">Автор фото: Борис</p>
+              <button class="gallery__button button-gallery">
+                <span class="visually-hidden">Кнопка поставить лайк.</span>
+                <span class="gallery__like-quantity like-quantity">1350</span>
+              </button>
+            </div>
           </li>
           <li class="gallery-list__item gallery-box">
             <a class="gallery-box__link" href="#">
               <picture>
                 <source type="image/webp" media="(min-width: 1200px)"
-                srcset="img/photo-catalog-desktop2.webp 1x, img/photo-catalog-desktop2@2x.webp 2x" width="1200" height="400">
-              <source type="image/webp" media="(min-width: 768px)"
-                srcset="img/photo-catalog-tablet2.webp 1x, img/photo-catalog-tablet2@2x.webp 2x" width="648" height="400">
-              <source type="image/webp" srcset="img/photo-catalog-mobile2.webp 1x, img/photo-catalog-mobile2@2x.webp 2x" width="280" height="280">
-              <source media="(min-width: 1200px)" srcset="img/photo-catalog-desktop2.jpg 1x, img/photo-catalog-desktop2@2x.jpg 2x" type="image/jpg" width="1200" height="400">
-                  <source media="(min-width: 768px)" srcset="img/photo-catalog-tablet2@2x.jpg 1x, img/photo-catalog-tablet2@2x.jpg 2x" type="image/jpg" width="648" height="400">
-                <img class="gallery-box__img gallery-box__img2" width="280" height="280" src="img/photo-catalog-mobile2.jpg" srcset="img/photo-catalog-mobile2@2x.jpg 2x"   alt="Растения города Седона.">
+                  srcset="img/photo-catalog-desktop2.webp 1x, img/photo-catalog-desktop2@2x.webp 2x" width="1200"
+                  height="400">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/photo-catalog-tablet2.webp 1x, img/photo-catalog-tablet2@2x.webp 2x" width="648"
+                  height="400">
+                <source type="image/webp"
+                  srcset="img/photo-catalog-mobile2.webp 1x, img/photo-catalog-mobile2@2x.webp 2x" width="280"
+                  height="280">
+                <source media="(min-width: 1200px)"
+                  srcset="img/photo-catalog-desktop2.jpg 1x, img/photo-catalog-desktop2@2x.jpg 2x" type="image/jpg"
+                  width="1200" height="400">
+                <source media="(min-width: 768px)"
+                  srcset="img/photo-catalog-tablet2@2x.jpg 1x, img/photo-catalog-tablet2@2x.jpg 2x" type="image/jpg"
+                  width="648" height="400">
+                <img class="gallery-box__img gallery-box__img2" width="280" height="280"
+                  src="img/photo-catalog-mobile2.jpg" srcset="img/photo-catalog-mobile2@2x.jpg 2x"
+                  alt="Растения города Седона.">
               </picture>
             </a>
-<div class="gallery-box__wrapper gallery-box__wrapper--small">
-                  <h3 class="gallery-box__caption caption caption--catalog">Местная растительность</h3>
-                  <p class="gallery-box__author author">Автор фото: Сергей</p>
-                  <button class="gallery__button button-gallery">
-                    <span class="visually-hidden">Кнопка поставить лайк.</span>
-                    <span class="gallery__like-quantity like-quantity">143</span>
-                  </button>
-                </div>
+            <div class="gallery-box__wrapper gallery-box__wrapper--small">
+              <h3 class="gallery-box__caption caption caption--catalog">Местная растительность</h3>
+              <p class="gallery-box__author author">Автор фото: Сергей</p>
+              <button class="gallery__button button-gallery">
+                <span class="visually-hidden">Кнопка поставить лайк.</span>
+                <span class="gallery__like-quantity like-quantity">143</span>
+              </button>
+            </div>
           </li>
           <li class="gallery-list__item gallery-box">
             <a class="gallery-box__link" href="#">
               <picture>
                 <source type="image/webp" media="(min-width: 1200px)"
-                srcset="img/photo-catalog-desktop3.webp 1x, img/photo-catalog-desktop3@2x.webp 2x" width="1200" height="400">
-              <source type="image/webp" media="(min-width: 768px)"
-                srcset="img/photo-catalog-tablet3.webp 1x, img/photo-catalog-tablet3@2x.webp 2x" width="648" height="400">
-              <source type="image/webp" srcset="img/photo-catalog-mobile3.webp 1x, img/photo-catalog-mobile3@2x.webp 2x" width="280" height="280">
-              <source media="(min-width: 1200px)" srcset="img/photo-catalog-desktop3.jpg 1x, img/photo-catalog-desktop3@2x.jpg 2x" type="image/jpg" width="1200" height="400">
-                  <source media="(min-width: 768px)" srcset="img/photo-catalog-tablet3@2x.jpg 1x, img/photo-catalog-tablet3@2x.jpg 2x" type="image/jpg" width="648" height="400">
-                <img class="gallery-box__img gallery-box__img3" width="280" height="280" src="img/photo-catalog-mobile3.jpg" srcset="img/photo-catalog-mobile3@2x.jpg 2x"   alt="Дорога на север в Седоне.">
+                  srcset="img/photo-catalog-desktop3.webp 1x, img/photo-catalog-desktop3@2x.webp 2x" width="1200"
+                  height="400">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/photo-catalog-tablet3.webp 1x, img/photo-catalog-tablet3@2x.webp 2x" width="648"
+                  height="400">
+                <source type="image/webp"
+                  srcset="img/photo-catalog-mobile3.webp 1x, img/photo-catalog-mobile3@2x.webp 2x" width="280"
+                  height="280">
+                <source media="(min-width: 1200px)"
+                  srcset="img/photo-catalog-desktop3.jpg 1x, img/photo-catalog-desktop3@2x.jpg 2x" type="image/jpg"
+                  width="1200" height="400">
+                <source media="(min-width: 768px)"
+                  srcset="img/photo-catalog-tablet3@2x.jpg 1x, img/photo-catalog-tablet3@2x.jpg 2x" type="image/jpg"
+                  width="648" height="400">
+                <img class="gallery-box__img gallery-box__img3" width="280" height="280"
+                  src="img/photo-catalog-mobile3.jpg" srcset="img/photo-catalog-mobile3@2x.jpg 2x"
+                  alt="Дорога на север в Седоне.">
               </picture>
             </a>
             <div class="gallery-box__wrapper gallery-box__wrapper--small">
@@ -119,36 +152,46 @@
             <a class="gallery-box__link" href="#">
               <picture>
                 <source type="image/webp" media="(min-width: 1200px)"
-                srcset="img/photo-catalog-desktop4.webp 1x, img/photo-catalog-desktop4@2x.webp 2x" width="1200" height="400">
-              <source type="image/webp" media="(min-width: 768px)"
-                srcset="img/photo-catalog-tablet4.webp 1x, img/photo-catalog-tablet4@2x.webp 2x" width="648" height="400">
-              <source type="image/webp" srcset="img/photo-catalog-mobile4.webp 1x, img/photo-catalog-mobile4@2x.webp 2x" width="280" height="280">
-              <source media="(min-width: 1200px)" srcset="img/photo-catalog-desktop4.jpg 1x, img/photo-catalog-desktop4@2x.jpg 2x" type="image/jpg" width="1200" height="400">
-                  <source media="(min-width: 768px)" srcset="img/photo-catalog-tablet4@2x.jpg 1x, img/photo-catalog-tablet4@2x.jpg 2x" type="image/jpg" width="648" height="400">
-                <img class="gallery-box__img gallery-box__img4" width="280" height="280" src="img/photo-catalog-mobile4.jpg" srcset="img/photo-catalog-mobile4@2x.jpg 2x"   alt="Мост дьявола.">
+                  srcset="img/photo-catalog-desktop4.webp 1x, img/photo-catalog-desktop4@2x.webp 2x" width="1200"
+                  height="400">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/photo-catalog-tablet4.webp 1x, img/photo-catalog-tablet4@2x.webp 2x" width="648"
+                  height="400">
+                <source type="image/webp"
+                  srcset="img/photo-catalog-mobile4.webp 1x, img/photo-catalog-mobile4@2x.webp 2x" width="280"
+                  height="280">
+                <source media="(min-width: 1200px)"
+                  srcset="img/photo-catalog-desktop4.jpg 1x, img/photo-catalog-desktop4@2x.jpg 2x" type="image/jpg"
+                  width="1200" height="400">
+                <source media="(min-width: 768px)"
+                  srcset="img/photo-catalog-tablet4@2x.jpg 1x, img/photo-catalog-tablet4@2x.jpg 2x" type="image/jpg"
+                  width="648" height="400">
+                <img class="gallery-box__img gallery-box__img4" width="280" height="280"
+                  src="img/photo-catalog-mobile4.jpg" srcset="img/photo-catalog-mobile4@2x.jpg 2x" alt="Мост дьявола.">
               </picture>
             </a>
-<div class="gallery-box__wrapper gallery-box__wrapper--small">
-                  <h3 class="gallery-box__caption caption caption--catalog">Мост дьявола</h3>
-                  <p class="gallery-box__author author">Автор фото: Антон</p>
-                  <button class="gallery__button button-gallery">
-                    <span class="visually-hidden">Кнопка поставить лайк.</span>
-                    <span class="gallery__like-quantity like-quantity">254</span>
-                  </button>
-                </div>
+            <div class="gallery-box__wrapper gallery-box__wrapper--small">
+              <h3 class="gallery-box__caption caption caption--catalog">Мост дьявола</h3>
+              <p class="gallery-box__author author">Автор фото: Антон</p>
+              <button class="gallery__button button-gallery">
+                <span class="visually-hidden">Кнопка поставить лайк.</span>
+                <span class="gallery__like-quantity like-quantity">254</span>
+              </button>
+            </div>
           </li>
         </ul>
       </section>
       <section class="main__video video">
         <h2 class="video__caption caption caption--form">Все еще сомневаетесь?</h2>
-        <p class="video__text text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-<div class="video__container">
-        <video class="video__video" width="580" controls poster="./img/video-mobile.jpg">
-          <source src="./img/video/video.mp4" type="video/mp4">
-          <source src="./img/video/video.webm" type="video/webM">
-          Ваш браузер не поддерживает встроенные видео.
-        </video>
-      </div>
+        <p class="video__text text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной
+          раз!</p>
+        <div class="video__container">
+          <video class="video__video" width="580" controls poster="./img/video-mobile.jpg">
+            <source src="./img/video/video.mp4" type="video/mp4">
+            <source src="./img/video/video.webm" type="video/webM">
+            Ваш браузер не поддерживает встроенные видео.
+          </video>
+        </div>
       </section>
     </main>
     <footer class="body__footer footer">
@@ -171,17 +214,19 @@
         </li>
       </ul>
       <div class="footer__logo footer-logo">
-        <a class="footer-logo__link" href="https://htmlacademy.ru/intensive/adaptive"  target="_blank">
-        <span class="footer-logo__text">Разработано</span>
-        <svg class="footer-logo__icon" width="29" height="35" viewBox="0 0 29 35" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M14.65 0.449951H14.55L1.05 1.84995V26.55L14.55 34.5499L27.95 26.55V1.84995L14.65 0.449951ZM26.05 12.55L14.55 5.74995V5.64995H14.45L14.35 5.54995V5.64995L2.95 12.55V3.54995L14.45 2.34995L26.05 3.54995V12.55ZM14.45 7.24995L25.95 13.95L21.45 16.55L14.35 12.35V13.75L20.25 17.25L19.35 17.75L14.35 14.75V16.15L18.15 18.45L17.35 18.95L14.35 17.15V18.55L16.25 19.65L14.45 20.75L3.05 14.05L14.45 7.24995ZM2.95 15.55L14.35 22.35V23.35L6.45 18.65V20.05L14.45 24.85V25.95L6.45 21.25V22.65L14.45 27.45L22.55 22.55V17.35L25.95 15.35V25.35L14.45 32.25L2.95 25.45V15.55Z"
-            fill="currentColor" />
-        </svg>
-      </a>
+        <a class="footer-logo__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+          <span class="footer-logo__text">Разработано</span>
+          <svg class="footer-logo__icon" width="29" height="35" viewBox="0 0 29 35" fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M14.65 0.449951H14.55L1.05 1.84995V26.55L14.55 34.5499L27.95 26.55V1.84995L14.65 0.449951ZM26.05 12.55L14.55 5.74995V5.64995H14.45L14.35 5.54995V5.64995L2.95 12.55V3.54995L14.45 2.34995L26.05 3.54995V12.55ZM14.45 7.24995L25.95 13.95L21.45 16.55L14.35 12.35V13.75L20.25 17.25L19.35 17.75L14.35 14.75V16.15L18.15 18.45L17.35 18.95L14.35 17.15V18.55L16.25 19.65L14.45 20.75L3.05 14.05L14.45 7.24995ZM2.95 15.55L14.35 22.35V23.35L6.45 18.65V20.05L14.45 24.85V25.95L6.45 21.25V22.65L14.45 27.45L22.55 22.55V17.35L25.95 15.35V25.35L14.45 32.25L2.95 25.45V15.55Z"
+              fill="currentColor" />
+          </svg>
+        </a>
       </div>
     </footer>
   </div>
   <script src="./js/script.js"></script>
 </body>
+
 </html>
