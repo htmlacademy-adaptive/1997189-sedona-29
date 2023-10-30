@@ -5,11 +5,14 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
   <meta name="description" content="Сайт туристического города Седона.">
-  <meta name="viewport" content="width=device-width, initial-scale=1
-    ">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 </head>
-
 <body class="page__body body">
   <div class="body__container">
     <header class="body__header header ">
@@ -25,15 +28,14 @@
             <a class="nav-list__item-link" href="form.html">Форма Отзыва</a>
           </li>
           <li class="nav-list__item">
-            <a class="nav-list__item-link" href="">HTML ACADEMY</a>
+            <a class="nav-list__item-link" href="https://htmlacademy.ru" target="_blank">HTML ACADEMY</a>
           </li>
         </ul>
         <button class="nav__button toggle" type="button">
           <span class="visually-hidden">Кнопка закрытия, открытия меню.</span>
         </button>
         <a class=" header__logo logo" href="">
-                    <img class="logo__img logo-img" src="img/logo-sedona.svg" width="185" height="96"
-              alt="Логотип города Седона.">
+          <img class="logo__img logo-img" src="img/logo-sedona.svg" width="185" height="96" alt="Логотип города Седона.">
         </a>
       </nav>
     </header>
@@ -43,7 +45,6 @@
         <img class="welcome__image welcome-image" src="img/text-index.svg" width="282" height="214"
           alt="Добро пожаловать в Седону.">
       </section>
-
       <section class="main__advantages advantages">
         <h2 class="advantages__caption caption">СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего!</h2>
         <p class="advantages__text text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
@@ -64,7 +65,6 @@
                   srcset="img/photo-city-tablet@1x.webp 1x, img/photo-city-tablet@2x.webp 2x" width="512" height="256">
                 <source type="image/webp" srcset="img/photo-city@1x.webp 1x, img/photo-city@2x.webp 2x" width="520"
                   height="260">
-
                 <source media="(min-width: 1200px)"
                   srcset="img/photo-city-desktop@1x.jpg 1x, img/photo-city-desktop@2x.webp 2x" type="image/png"
                   width="800" height="256">
@@ -106,7 +106,6 @@
                   srcset="img/photo-bridge-tablet@1x.webp 1x, img/photo-bridge-tablet@2x.webp 2x" width="512" height="256">
                 <source type="image/webp" srcset="img/photo-bridge@1x.webp 1x, img/photo-bridge@2x.webp 2x" width="520"
                   height="260">
-
                 <source media="(min-width: 1200px)"
                   srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.webp 2x" type="image/png"
                   width="800" height="256">
@@ -129,13 +128,11 @@
           <li class="advantages-list__item">
             <div class="advantages-list__text-wrapper">
             <h3 class="advantages-list__caption caption">
-
               <span class="advantages-list__row">КРАСИВАЯ ДОРОГА
               </span>
               </h3>
             <p class="advantages-list__text text">Ехать в Седону из Лас-Вегаса совсем не&nbsp;скучно!</p>
             </div>
-
           </li>
           <li class="advantages-list__item">
             <div class="advantages-list__text-wrapper">
@@ -151,9 +148,8 @@
       <section class="main__search search">
         <h2 class="search__caption caption caption--big">Заинтересовались?</h2>
         <p class="search__text text">Укажите предполагаемые даты поездки,<br class="text__break">и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <a class="search__button button" href="">Найти гостиницу</a>
+        <a class="search__button button" href="#">Найти гостиницу</a>
       </section>
-
       <section class="main__map map">
         <h2 class="visually-hidden">Карта города Садона.</h2>
         <div class="map__wrapper">
@@ -163,27 +159,22 @@
             <div class="map__nojs-wrapper">
               <picture>
                 <source type="image/webp" media="(min-width: 1200px)"
-                  srcset="img/map-desktop.webp 1x, img/map-desktop@2x.webp 2x">
+                  srcset="img/map-desktop.webp 1x, img/map-desktop@2x.webp 2x" width="1200" height="350">
                 <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/map-tablet.webp 1x, img/map-tablet@2x.webp 2x">
-
-                <source type="image/webp" srcset="img/map-mobile.webp 1x, img/map-mobile@2x.webp 2x">
-
+                  srcset="img/map-tablet.webp 1x, img/map-tablet@2x.webp 2x" width="768" height="350">
+                <source type="image/webp" srcset="img/map-mobile.webp 1x, img/map-mobile@2x.webp 2x"  width="320"
+                height="350">
                 <source media="(min-width: 1200px)" srcset="img/map-desktop.jpg 1x, img/map-desktop@2x.jpg 2x"
                   type="image/png" width="1200" height="350">
-
                 <source media="(min-width: 768px)" srcset="img/map-tablet.jpg 1x, img/map-tablet@2x.jpg 2x"
                   type="image/png" width="768" height="350">
-
                 <img class="map__image" src="img/map-mobile.jpg" srcset="img/map-mobile@2x.jpg 2x" width="320"
                   height="350" alt="Адрес места на карте: 780 Чапел-роуд, Седона 86336, Соединенные Штаты Америки.">
               </picture>
             </div>
-
           </noscript>
         </div>
       </section>
-
     </main>
     <footer class="body__footer footer">
       <a class="footer__link" href="#">#visitSEDONA</a>
@@ -205,7 +196,7 @@
         </li>
       </ul>
       <div class="footer__logo footer-logo">
-        <a class="footer-logo__link" href="#">
+        <a class="footer-logo__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
         <span class="footer-logo__text">Разработано</span>
         <svg class="footer-logo__icon" width="29" height="35" viewBox="0 0 29 35" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
           <path

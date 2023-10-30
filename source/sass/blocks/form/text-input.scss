@@ -10,6 +10,10 @@
   width: 100%;
   cursor: pointer;
 
+  &:invalid {
+    outline: 1px solid #ff0000;
+  }
+
   &:placeholder-shown {
     color: rgba(0, 0, 0, 0.3);
     font-size: 18px;
@@ -17,12 +21,17 @@
     font-weight: 700;
     line-height: 26px;
     background-color: #f2f2f2;
+    outline: none;
     opacity: 1;
   }
 
   &::placeholder {
     color: rgba(0, 0, 0, 0.3);
     opacity: 1;
+  }
+
+  &:hover {
+    background-color: #e5e5e5;
   }
 
   &:focus,
@@ -32,8 +41,8 @@
     background-color: #ffffff;
   }
 
-  &:hover {
-    background-color: #e5e5e5;
+  &:disabled {
+    opacity: 0.4;
   }
 
   &--phone {

@@ -8,8 +8,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1
     ">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 </head>
-
 <body class="page__body body">
   <div class="body__container body__container--form">
     <header class="body__header header ">
@@ -25,17 +29,14 @@
             <a class="nav-list__item-link" href="#">Форма Отзыва</a>
           </li>
           <li class="nav-list__item">
-            <a class="nav-list__item-link" href="">HTML ACADEMY</a>
+            <a class="nav-list__item-link" href="https://htmlacademy.ru" target="_blank">HTML ACADEMY</a>
           </li>
         </ul>
         <button class="nav__button toggle" type="button">
           <span class="visually-hidden">Кнопка закрытия, открытия меню.</span>
         </button>
         <a class=" header__logo logo" href="index.html">
-
-            <img class="logo__img logo-img" src="img/logo-sedona.svg" width="185" height="96"
-              alt="Логотип города Седона.">
-
+          <img class="logo__img logo-img" src="img/logo-sedona.svg" width="185" height="96" alt="Логотип города Седона.">
         </a>
       </nav>
     </header>
@@ -44,11 +45,9 @@
         <h1 class="visually-hidden">Сайт туристического города Седона.</h1>
         <img class="welcome__image welcome-image welcome__image--one-word-logo" src="img/sedona.svg" width="229" height="39" alt="Добро пожаловать в Седону.">
       </section>
-
       <section class="main__form form-page">
         <h2 class="form-page__caption caption caption--form">Оставьте свой отзыв</h2>
         <p class="form-page__text text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
-
         <form class="form-page__form form" method="post" action="https://echo.htmlacademy.ru/">
         <fieldset class="form__group group-name">
             <legend class="form__caption group-name__caption caption">Представьтесь:</legend>
@@ -73,10 +72,8 @@
               </li>
             </ul>
           </fieldset>
-
           <fieldset class="form__group group-contact">
             <legend class="form__caption group-contact__caption caption">Контактная информация:</legend>
-
             <ul class="form-list group-contact__list">
               <li class="group-contact__item form-list__item text-input">
                 <label class="text-input__label text-input__label--phone">
@@ -158,13 +155,13 @@
               <span class="caption__line-through">Опишите свои эмоции:
               </span>
               </legend>
+              <label class="visually-hidden" for="feedback">Форма обратной связи.</label>
             <textarea class="feedback-text__text" name="feedback" id="feedback" placeholder="Опишите подробно все свои восторги"></textarea>
             <div class="form__button-wrapper">
             <button type="submit" class="form__button button">Отправить отзыв</button>
             <p class="form__explanation">* — обязательные поля</p>
           </div>
           </fieldset>
-
         </form>
       </section>
 </main>
@@ -188,7 +185,7 @@
     </li>
   </ul>
   <div class="footer__logo footer-logo">
-    <a class="footer-logo__link" href="#">
+    <a class="footer-logo__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
     <span class="footer-logo__text">Разработано</span>
     <svg class="footer-logo__icon" width="29" height="35" viewBox="0 0 29 35" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
       <path
@@ -203,8 +200,20 @@
   <div class="modal">
     <h2 class="modal__caption caption caption--modal">ЧТО-ТО ПОШЛО НЕ ТАК!</h2>
     <p class="modal__text text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-    <button type="button" class="modal__button button">Ок</button>
+    <div class="modal__button-wrapper">
+    <button type="button" class="modal__button button button--modal">Ок</button>
   </div>
+</div>
+</div>
+
+<div class="modal-container ">
+  <div class="modal modal--success">
+    <h2 class="modal__caption caption caption--modal">Ваш отзыв отправлен!</h2>
+    <p class="modal__text text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В&nbsp;ближайшее время мы опубликуем его на сайте.</p>
+    <div class="modal__button-wrapper">
+    <button type="button" class="modal__button button button--modal">Закрыть окно</button>
+  </div>
+</div>
 </div>
 <script src="./js/script.js"></script>
 </body>

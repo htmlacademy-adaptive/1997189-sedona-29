@@ -21,7 +21,6 @@
   width: 150px;
 }
 
-
 .form__group {
   border: none;
   padding: 0;
@@ -51,7 +50,7 @@
   .form__button {
     width: 324px;
     margin: unset;
-    align-self: start;
+    align-self: flex-start;
   }
 
   .form__group {
@@ -84,6 +83,7 @@
     font-weight: 400;
     line-height: 21px;
     margin-top: 21px;
+    color: rgba(51, 51, 51, 1);
   }
 }
 

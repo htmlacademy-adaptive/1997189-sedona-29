@@ -25,6 +25,7 @@
 
 .advantages-list__caption {
   text-align: center;
+  color: inherit;
 
   &::after {
     content: "– №" counter(number) " –";
@@ -49,7 +50,6 @@
 .advantages-list__item {
   &--box {
     position: relative;
-    //padding: 0 34px 0 34px;
     padding: 47px 0 0 0;
 
     &::after {
@@ -63,7 +63,6 @@
       left: 0;
       right: 0;
       background-size: cover;
-      //background-color: variables.$basic-blue;
     }
 
     & > .advantages-list__text-wrapper {
@@ -83,6 +82,7 @@
   &:nth-child(n + 3) {
     background-color: variables.$basic-grey;
     padding: 0 18px;
+    color: #333333;
   }
 
   &:nth-child(-n + 2) {
@@ -130,6 +130,7 @@
   .advantages-list__caption {
     max-width: 151px;
     margin: 0 auto;
+    color: #ffffff;
 
     &::after {
       margin: 0 auto 19px;
@@ -141,7 +142,6 @@
   }
 
   .advantages-list__img {
-    //height: 100%;
     min-height: 100%;
     overflow: hidden;
   }
@@ -153,6 +153,14 @@
   }
 
   .advantages-list__item {
+    &:nth-child(n + 3) {
+      color: #333333;
+    }
+
+    &:nth-child(n + 3) .advantages-list__caption {
+      color: #000000;
+    }
+
     &--box {
       grid-column: 1/-1;
       grid-row: 1/3;

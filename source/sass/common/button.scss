@@ -24,4 +24,18 @@
     background-color: #5496bd;
     color: rgba(255, 255, 255, 0.3);
   }
+
+  &--modal {
+    font-size: 18px;
+  }
+
+  /*Класс для неактивной базовой (голубой) кнопки*/
+  &:disabled,
+  &--disabled,
+  &--disabled:hover,
+  &--disabled:focus,
+  &--disabled:active {
+    background-color: #e5e5e5;
+    color: #ffffff;
+  }
 }

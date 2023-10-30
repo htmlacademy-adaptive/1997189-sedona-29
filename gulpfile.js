@@ -4,26 +4,18 @@ import sass from 'gulp-dart-sass';
 import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
-
 import csso from 'postcss-csso';
-
 import rename from 'gulp-rename';//только тут
-
 import htmlmin from 'gulp-htmlmin';
-
 import terser from 'gulp-terser';//скрипты
-
 import squoosh from 'gulp-libsquoosh';
-
 import svgstore from 'gulp-svgstore';//для спрайта
-
 import svgo from 'gulp-svgmin';
 import { deleteAsync } from 'del';
 import { stacksvg } from "gulp-stacksvg";
 
 
 // Styles
-
 export const styles = () => {
   return gulp.src('source/sass/style.scss', { sourcemaps: true })
     .pipe(plumber())
@@ -56,25 +48,10 @@ const optimizeImages = () => {
   .pipe(gulp.dest('build/img'));
 };
 
-//const copyImages = () => {
-  //return gulp.src('source/img/**/*.{jpg,png}')
-  //.pipe(gulp.dest('build/img'));
-//};
-
 const copyImages = () => {
   return gulp.src('source/img/**/*.{jpg,png,mp4,webm}')
   .pipe(gulp.dest('build/img'));
 };
-
-/*const sprite = () => {
-  return gulp.src ('source/img/iconsSprite/*.svg')
-  .pipe(svgo())
-  .pipe(svgstore ({
-    inlineSvg: true
-  }))
-  .pipe(rename('sprite.svg'))
-  .pipe(gulp.dest('build/img/iconsSprite'));
-};*/
 
 //webp
 const createWebp = () => {
@@ -93,7 +70,6 @@ export const makeStack = () => {
   .pipe(gulp.dest('build/img/icons'));
 };
 
-
 //Scripts
 const scripts = () => {
   return gulp.src('source/js/*.js')
@@ -108,7 +84,7 @@ const svg = () => {
   .pipe(gulp.dest('build/img'));
 };
 
-//шрифты, манифест асинхронный, сделали синхронным
+//шрифты, манифест
 export const copy = (done) => {
   gulp.src([
   "source/fonts/**/*.{woff2,woff}",
@@ -120,7 +96,7 @@ export const copy = (done) => {
   done();
   };
 
-  /*export const copyManifest = (done) => {
+  export const copyManifest = (done) => {
     gulp.src([
     "manifest.webmanifest",
     "favicon.ico",
@@ -129,10 +105,9 @@ export const copy = (done) => {
     })
     .pipe(gulp.dest('build'));
     done();
-    };*/
+    };
 
 // Server
-
 const server = (done) => {
   browser.init({
     server: {
@@ -165,7 +140,7 @@ const watcher = () => {
 export const build = gulp.series(
   clean,
   copy,
-  //copyManifest,
+  copyManifest,
   optimizeImages,
   gulp.parallel (
     styles,
@@ -181,8 +156,8 @@ export const build = gulp.series(
 export default gulp.series(
   clean,
   copy,
+  copyManifest,
   copyImages,
-  //copyManifest,
   gulp.parallel (
     styles,
     html,

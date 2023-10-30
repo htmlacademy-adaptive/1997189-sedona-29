@@ -11,6 +11,7 @@
   margin: 0;
   min-height: 23px;
   display: block;
+  cursor: pointer;
 
   &::before {
     content: "";
@@ -23,6 +24,33 @@
     top: -4px;
     background-color: #000000;
     opacity: 0.3;
+  }
+
+  &:hover,
+  &:focus,
+  &:focus-visible,
+  &:hover .gallery__like-quantity,
+  &:focus .gallery__like-quantity,
+  &:focus-visible .gallery__like-quantity {
+    color: variables.$basic-blue;
+    outline: none;
+  }
+
+  &:active,
+  &:active .gallery__like-quantity {
+    color: #b3b3b3;
+  }
+
+  &:hover::before,
+  &:focus::before,
+  &:focus-visible::before {
+    background-color: variables.$basic-blue;
+    opacity: 1;
+    outline: none;
+  }
+
+  &:active::before {
+    background-color: #b3b3b3;
   }
 }
 
